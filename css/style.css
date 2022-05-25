@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "RalewayBlack"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-Black.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "RalewayBold"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "RalewayMedium"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Raleway"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", "Roboto";
+}
+
+
+
+.largecont{
+    padding: 1.302vw 2.865vw;
+    margin: 1.042vw 6.406vw 1.042vw 6.406vw;
+    background-color: #d5d5d5;
+    border-radius: 2.604vw;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+}
+
+
+.navbar{
+    height: 64px;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 94px auto 71px;
+    align-items: center;
+    justify-items: end;
+    
+}
+
+.navbar *{   
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.938vw;
+        line-height: 1.094vw;
+        }
+
+.navbar *{
+    color: #212121;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.navtarget>ul{
+    display: inline-grid;
+    grid-template-columns: 4.479vw 4.479vw 4.479vw 4.479vw;
+    justify-items: center;
+    gap: 0px 3.125vw;
+    margin-right: 13.125vw;
+}
+
+.aboutbimplcont{
+    display: grid;
+}
+
+.aboutbimplsm{
+    display: inline-grid;
+    grid-template-columns: 33.281vw auto;
+    margin-left: 7.396vw;
+    
+}
+
+
+.bimpltitle{
+    font-family: 'RalewayBlack';
+font-style: normal;
+font-weight: 900;
+font-size: 8vw;
+line-height: 7.813vw;
+margin-top: 6.354vw;
+}
+
+.aboutbimple span{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 1.250vw;
+line-height: 1.458vw;
+display: flex;
+align-items: flex-end;
+}
+
+
+
+.aboutbimplcall{
+    display: inline-grid;
+    grid-template-columns: 33.281vw auto;
+    margin-left: 7.396vw;
+    margin-top: 4vw;
+}
+
+
+.callbtncont a{
+            background: #4E44CE;
+            box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
+            border-radius: 1.146vw;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 0.833vw;
+            line-height: 0.990vw;
+            padding: 0.938vw 2.188vw;
+            color: #F0F0F0;
+            text-align: center;
+            text-decoration: none;
+
+}
+
+.skipbottoncont{
+    margin-top: 4.531vw;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.skipbottoncont a{
+        font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.781vw;
+    line-height: 0.938vw;
+    color: #212121;
+   
+    text-decoration: none;
+}
+
+.aboutbimpanimcont{
+    text-align: center;
+    position: relative;
+    top: 3.125vw;
+    left: 3vw;
+    width: 34.896vw;
+}
+
+.aboutbimpanimcont video{
+    width: 34.896vw;
+}
+.smallcont {
+    margin: 4.271vw 10vw 0px 10vw;
+}
+
+.bigtite {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 5vw;
+line-height: 5.885vw;
+color: #212121;
+}
+
+.cardsaboutcont {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;  
+    margin-top: 2.969vw;
+    gap: 2.083vw;
+    width: 100%
+}
+
+.cardsabout {
+    background: #212121;
+/* тень */
+
+box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+border-radius: 2.604vw;
+    padding: 1.875vw 2.135vw;
+    width: 18.229vw;
+}
+
+.cardsabout h3{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 1.771vw;
+line-height: 2.083vw;
+/* identical to box height */
+margin: 0px 0px 2.708vw 0px;
+
+/* 66% */
+
+color: #726CC8;
+}
+
+.cardsabout p{
+    
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 0.781vw;
+line-height: 0.938vw;
+
+color: #C4C4C4;
+}
+
+
+
+.aboutasimages {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(9, 3.333vw);
+    gap: 0px 4.167vw;
+    margin-top: 2.083vw;
+    justify-content: center;
+}
+
+.circletext {
+    position: relative;
+    top:-26.042vw;
+    z-index:1;
+    left: 70vw;
+    width: 14.271vw;
+}
+
+
+.circletext img{
+    animation: rotsircl 10s linear infinite;
+    width: 14.271vw;
+}
+
+.aboutasimages img{
+    width: 3.333vw;
+}
+
+@keyframes rotsircl {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+
+
+.slidecont {
+    display: inline-grid;
+    grid-template-columns: 25.781vw auto 25.521vw;
+    margin-top: 2.448vw;
+    margin-left: 2.448vw;
+    margin-bottom: 2.448vw;
+}
+
+.titleslide {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 2.917vw;
+line-height: 3.438vw;
+color: #4E44CE;
+}
+
+
+
+.btnslide {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 0.833vw;
+line-height: 0.990vw;
+text-align: center;
+padding: 0.938vw 2.760vw;
+color: #F0F0F0;
+background: #4E44CE;
+box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
+border-radius: 1.146vw;
+}
+
+.pinslide {
+    margin: 0px 15.625vw;
+}
+
+.textslide {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 0.781vw;
+line-height: 0.938vw;
+
+color: #000000;
+}
