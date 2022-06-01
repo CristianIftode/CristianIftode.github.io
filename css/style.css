@@ -29,7 +29,7 @@
 .largecont{
     padding: 1.302vw 2.865vw;
     margin: 1.042vw 6.406vw 1.042vw 6.406vw;
-    background-color: #d5d5d5;
+    background-color: #e6e6e6;
     border-radius: 2.604vw;
     box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
 }
@@ -105,6 +105,59 @@ align-items: flex-end;
     grid-template-columns: 33.281vw auto;
     margin-left: 7.396vw;
     margin-top: 4vw;
+}
+
+#nav-icon7 {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    transition-duration: 1s;
+    margin: 48px auto 12px auto;
+    cursor: pointer;
+    display: none;
+}
+#nav-icon7 span {
+    height: 9px;
+    width: 60px;
+    background-color: #337AB7;
+    border-radius: 20px;
+    position: absolute;
+    transition-duration: .25s;
+}
+#nav-icon7 span:before {
+    left: 0;
+    position: absolute;
+    top: -18px;
+    height: 9px;
+    width: 60px;
+    background-color: #337AB7;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+#nav-icon7 span:after {
+    left: 0;
+    position: absolute;
+    top: 18px;
+    height: 9px;
+    width: 60px;
+    background-color: #337AB7;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+#nav-icon7.open span {
+    background: transparent;
+}
+#nav-icon7.open span:before {
+    transition: transform .25s;
+    transform: rotateZ(45deg);
+    top: 0;
+}
+#nav-icon7.open span:after {
+    transition: transform .25s;
+    transform: rotateZ(-405deg);
+    top: 0;
 }
 
 
@@ -296,4 +349,270 @@ font-size: 0.781vw;
 line-height: 0.938vw;
 
 color: #000000;
+}
+
+.gg-shape-circle{
+    width: 0.833vw !important;
+    height: 0.833vw !important;
+}
+
+.activecircle {
+    height: 1.302vw !important;
+    width: 1.302vw !important;
+    background-color: #4E44CE;
+}
+
+.pinslide ul {
+    display: grid;
+    justify-items: center;
+    gap: 2.344vw;
+}
+
+.walltxt *{
+    font-family: 'RalewayBlack';
+font-style: normal;
+font-weight: 900;
+font-size: 9.771vw;
+line-height: 2.083vw;
+/* identical to box height */
+margin: 0px 0px 2.708vw 0px;
+    position: relative;
+}
+
+
+.caontwalltxt{
+    position: relative;
+    top: -10vw
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 420px) {
+    .navtarget{
+        display: none;
+    }
+    #nav-icon7{
+        display: block;
+    }
+    
+    .navbar {
+        height: 64px;
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 94px auto;
+        align-items: center;
+        justify-items: end;
+        justify-content: space-between;
+    }
+    
+    .lng{
+        display: none;
+    }
+    .aboutbimplsm{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;
+        justify-items: center;
+    }
+    
+    .aboutbimplcall{
+        grid-template-columns: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        justify-items: center;
+    }
+    
+    .cardsaboutcont{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .cardsabout {
+        width: 100%;
+    }
+    .circletext{
+        top: -57.042vw;
+    }
+    
+    .aboutasimages {
+        width: 100%;
+        display: flex;
+        gap: 15px 14.16vw;
+        margin-top: 2.083vw;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .aboutasimages img {
+        width: 12.333vw;
+    }
+    
+    .slidecont {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 2.448vw;
+    margin-left: 2.448vw;
+    margin-bottom: 2.448vw;
+}
+    
+    .pinslide{
+        display: none;
+    }
+    .titleslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 7.917vw;
+    line-height: 3.438vw;
+    color: #4E44CE;
+}
+    .textslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.781vw;
+    line-height: 3.938vw;
+    color: #000000;
+}
+    
+    .btnslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.833vw;
+    line-height: 0.990vw;
+    text-align: center;
+    padding: 1.938vw 3.76vw;
+    color: #F0F0F0;
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+    border-radius: 1.146vw;
+}
+    
+    .cardsabout h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.771vw;
+    line-height: 5.083vw;
+    margin: 0px 0px 2.708vw 0px;
+    color: #726CC8;
+}
+    .cardsabout p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.781vw;
+    line-height: 5.938vw;
+    color: #C4C4C4;
+}
+}
+
+
+
+.callbackcont {
+    display: grid;
+    justify-content: center;
+    margin-top: -26.042vw;
+}
+
+input[type=text]{
+    border-radius: 1.146vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 3.125vw;
+    width: 14.948vw;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    font-size: 0.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    /* identical to box height */
+    color: #C4C4C4;
+    margin: 0px 2.083vw 2.083vw 0px;
+}
+
+
+
+input[type=submit]{
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
+    border-radius: 1.146vw;
+    border: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.833vw;
+    line-height: 0.990vw;
+    /* identical to box height */
+    padding: 0.938vw 2.188vw;
+    text-align: center;
+    color: #F0F0F0;
+    margin-top: 1.042vw;
+    margin-bottom: 2.083vw;
+}
+
+input[type=textarea]{
+     border-radius: 1.146vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 3.125vw;
+    width: 34.375vw;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    font-size: 0.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    /* identical to box height */
+    height: 8.333vw;
+    margin: 0px 0px 1.042vw 0px;
+    color: #C4C4C4;
+}
+
+input[type="checkbox"] {
+      background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    /* тень */
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    border-radius: 7px;
+    width: 1vw;
+    height: 1vw;
+    margin: 0.521vw;
+}
+
+form span{
+        font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.833vw;
+    line-height: 0.990vw;
+    /* identical to box height */
+
+
+    color: #000000;
 }
