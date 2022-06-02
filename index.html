@@ -102,7 +102,6 @@
           <path id="text-curve" fill="none" d="M-96 293.623C38.3425 210.173 409.79 96.8444 820.837 311.141C1231.88 525.437 1575.55 388.752 1696 293.623"></path>
               <text y="40" letter-spacing="-0.02em" style="transform:translateY(2rem)" fill="#202124" class="walltxt">
                   <textPath href="#text-curve" font-weight="600" id="raptx" startOffset="">
-<!--                       <animate attributeName="startOffset" from="100%" to ="-200%" begin="0s" dur="15s" repeatCount="indefinite"/>-->
                       <tspan fill="#4E44CE">BIMPLE</tspan> BIMPLE
                       <tspan fill="#4E44CE">BIMPLE</tspan> BIMPLE 
                       <tspan fill="#4E44CE">BIMPLE</tspan>
@@ -138,10 +137,16 @@
         window.addEventListener("scroll", () => {
             var a = window.pageYOffset -1500;
             scrollObject.setAttribute('startOffset', `${a - 1000}`);
+            var info = document.getElementById('testspan');
+                if (window.pageYOffset > 200 && window.pageYOffset < 250  ){
+                    $('html').animate({scrollTop:10}, 400, 'linear');
+                };
         });
    </script>
+
    
-   <script>
+<!-- функция колесика мыши -->         
+<!--   <script>
     var elem = document.body;
 
     if (elem.addEventListener) {
@@ -160,56 +165,42 @@
     }
 
 
-    // Это решение предусматривает поддержку IE8-
     function onWheel(e) {
       e = e || window.event;
-
-      // deltaY, detail содержат пиксели
-      // wheelDelta не дает возможность узнать количество пикселей
-      // onwheel || MozMousePixelScroll || onmousewheel
       var delta = e.deltaY || e.detail || e.wheelDelta;
 
       var info = document.getElementById('testspan');
         var o = 0;
         info.innerHTML  = +info.innerHTML + delta;
-        const element = document.querySelector(".this");
-                // select video element         
+        const element = document.querySelector(".this");        
                 var vid = document.getElementById('vid'); 
-                // var vid = $('#v0')[0]; // jquery option
-            // Use requestAnimationFrame for smooth playback
-                
-        if (info.innerHTML > 0){
+
+                function scrollPlay(){
+                          var frameNumber  = info.innerHTML / 1400;
+                          vid.currentTime  = frameNumber;     
+                }
+        if (info.innerHTML <= 2500 && info.innerHTML > -2000){
+                window.requestAnimationFrame(scrollPlay);
+        }else{
+                    document.getElementById('vid').play();
+                };
+        if (info.innerHTML > 3000){
             document.body.style.overflowY = "scroll";
                 let href = document.querySelector(".this");
                 $('html, body').animate({
                     scrollTop: $(href).offset().top
                 }, {
-                    duration: 500,   // по умолчанию «400» 
-                    easing: "linear" // по умолчанию «swing» 
+                    duration: 500,
+                    easing: "linear"
                 });
             
             info.innerHTML = +info.innerHTML + delta - 10000000;
             
         }else{
             
-        };
-        
-        
-        
-
+        };          
     };
-  </script>
-   <scritp>
-               
-   </scritp>
-   <script>
-       window.onload = function() {
-       
-       };
-       
-       
-    
-    </script>
+  </script> -->
 
    
     <script>
