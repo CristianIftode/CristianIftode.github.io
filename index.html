@@ -177,16 +177,8 @@
                 var vid = document.getElementById('vid'); 
                 // var vid = $('#v0')[0]; // jquery option
             // Use requestAnimationFrame for smooth playback
-                function scrollPlay(){
-                          var frameNumber  = info.innerHTML / 1400;
-                          vid.currentTime  = frameNumber;     
-                }
-        if (info.innerHTML <= 2500 && info.innerHTML > -2000){
-                window.requestAnimationFrame(scrollPlay);
-        }else{
-                    document.getElementById('vid').play();
-                };
-        if (info.innerHTML > 3000){
+                
+        if (info.innerHTML > 0){
             document.body.style.overflowY = "scroll";
                 let href = document.querySelector(".this");
                 $('html, body').animate({
