@@ -626,7 +626,7 @@ form span{
     }
     .aboutbimple span {
         position: absolute;
-        top: 48.08vh;
+        top: 52.08vh;
         font-size: 4.27vw;
         width: 59.47vw;
         line-height: 20px;
@@ -634,13 +634,14 @@ form span{
     }
     .aboutbimpanimcont {
         text-align: center;
-        position: relative;
-        top: -3.7vh;
-        left: 0vw;
-        width: 50.13vw;
+    position: absolute;
+    top: 25.299999999999997vh;
+    left: 25vw;
+    width: 50.13vw;
     }   
     .aboutbimpanimcont video {
         width: 50.13vw;
+        height: 25.13vh;
     }
     .callbtncont a {
         background: #4E44CE;
@@ -658,9 +659,10 @@ form span{
     }
     .aboutbimplcall{
         grid-template-columns: 100%;
-        margin-left: 0px;
-        margin-top: 22vh;
-        justify-items: center;
+        position: absolute;
+    top: 67vh;
+    left: 13vw;
+       
     }
     .skipbottoncont{
         display: none;
@@ -910,7 +912,3 @@ form span{
     color: #000000;
 }
 }
-
-
-
-
