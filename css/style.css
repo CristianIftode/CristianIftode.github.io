@@ -670,6 +670,7 @@ body {
     left: 22vw;
     margin-left: 0;
     margin-top: 0;
+    right: 0vw;    
     }
     .skipbottoncont{
         display: none;
