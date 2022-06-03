@@ -617,6 +617,7 @@ form span{
     .aboutbimplsm h1{
         position: relative;
         z-index: 1;
+        font-size: 17.07vw;
     }
     .aboutbimple span {
         position: absolute;
@@ -657,8 +658,13 @@ form span{
     top: 87vh;
     margin-top: 0;
     display: block;
-    right: 23vw;
+    margin: 0;
     }
+    
+    .aboutbimplcont {
+    display: grid;
+    justify-items: center;
+}
     .skipbottoncont{
         display: none;
     }
