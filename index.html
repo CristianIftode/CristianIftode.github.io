@@ -1,262 +1,923 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="css/style.css" rel="stylesheet">
-    <link href='https://css.gg/shape-circle.css' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <title>ТОП ВЕБ</title>
-</head>
-<body id="body">
-<div class="largecont firstlargcont" id="firstlargcont">
-    <div class="navbar">
-        <div class="logo"><img alt="" src="img/logo.svg"></div>
-        <div class="navtarget">
-            <ul>
-                <a href="#">
-                    <li>Главная</li>
-                </a>
-                <a href="#">
-                    <li>Проекты</li>
-                </a>
-                <a href="#">
-                    <li>Контакты</li>
-                </a>
-                <a href="#">
-                    <li>О нас</li>
-                </a>
-            </ul>
-        </div>
-        <div id="nav-icon7">
-            <span></span>
-        </div>
-        <div class="lng">
-            <span><a href="#">RU</a>/<a href="#">ENG</a></span>
-            <span id="testspan">0</span>
-        </div>
-    </div>
-    <div class="aboutbimplcont">
-        <div class="aboutbimplsm">
-            <div class="aboutbimple"><h1 class="bimpltitle">BIMPLE</h1><br><br><br><span>C 1936 года и продолжаем это делать сладко и изящно до сих пор</span>
-            </div>
-            <div class="aboutbimpanimcont">
-            <video src="img/0000-0250.mp4" id="vid" playsinline muted loop autoplay></video>
-            </div>
+@font-face {
+    font-family: "RalewayBlack"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-Black.ttf); /* Путь к файлу со шрифтом */
+}
 
-        </div>
-        <div class="aboutbimplcall">
-            <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
-        </div>
-        <div class="skipbottoncont"><a class="skipbtn" href="">SKIP</a></div>
-    </div>
-</div>
+@font-face {
+    font-family: "RalewayBold"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-Bold.ttf); /* Путь к файлу со шрифтом */
+}
 
-<div class="smallcont this" id="nas">
-    <div class="bigtite"><h1 class="bigtite">Наши преимущества</h1></div>
+@font-face {
+    font-family: "RalewayMedium"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Raleway"; /* Гарнитура шрифта */
+    src: url(../fonts/Raleway-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", "Roboto";
     
-    <div class="cardsaboutcont">
-        <div class="cardsabout"><h3>Lorem ipsum.</h3><p>1Lorem ipsum.</p><p>1Lorem ipsum.</p><p>1Lorem ipsum.</p></div>
-        <div class="cardsabout"><h3>Lorem ipsum.</h3><p>1Lorem ipsum.</p><p>1Lorem ipsum.</p><p>1Lorem ipsum.</p></div>
-        <div class="cardsabout"><h3>Lorem ipsum.</h3><p>1Lorem ipsum.</p><p>1Lorem ipsum.</p><p>1Lorem ipsum.</p></div>
-    </div>
+}
+
+
+:root {
+  --scrollbarBgColor: rgba(0, 0, 0, .05);
+  --scrollbarThumbColor: rgba(0, 0, 0, .15);
+  --scrollbarThumbColorSecond: rgba(255, 255, 255, .7);
+  --scrollbarWidth: 10px;
+  --scrollbarBorder: 0 solid var(--scrollbarBgColor);
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 4);
+}
+body {
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
+}
+body::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBgColor);
+  border-radius: var(--scrollbarBorderRadius);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarThumbColor);
+  border-radius: var(--scrollbarBorderRadius);
+  border: var(--scrollbarBorder);
+  background-image: linear-gradient(
+    180deg,
+    var(--scrollbarThumbColor) 0%,
+    var(--scrollbarThumbColorSecond) 90%
+  );
+}
+
+
+.largecont{
+    padding: 1.302vw 2.865vw;
+    margin: 1vw 6.406vw 1.042vw 6.406vw;
+    background-color: #e6e6e6;
+    border-radius: 2.604vw;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+}
+
+
+.navbar{
+    height: 5.93vh;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 94px auto 71px;
+    align-items: center;
+    justify-items: end;
     
+}
+
+.navbar *{   
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.938vw;
+        line-height: 1.094vw;
+        }
+
+.navbar *{
+    color: #212121;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.navtarget>ul{
+    display: inline-grid;
+    grid-template-columns: 4.479vw 4.479vw 4.479vw 4.479vw;
+    justify-items: center;
+    gap: 0px 3.125vw;
+    margin-right: 13.125vw;
+}
+
+.aboutbimplcont{
+    display: grid;
+}
+
+.aboutbimplsm{
+    display: inline-grid;
+    grid-template-columns: 33.281vw auto;
+    margin-left: 7.396vw;
     
-    <div class="circletext"><img  alt="" src="img/Vector.svg"></div>
-</div>
-<div class="aboutasimages">
-        <img src="img/imgab1.png" alt="">
-        <img src="img/imgab2.png" alt="">
-        <img src="img/imgab3.png" alt="">
-        <img src="img/imgab4.png" alt="">
-        <img src="img/imgab5.png" alt="">
-        <img src="img/imgab6.png" alt="">
-        <img src="img/imgab7.png" alt="">
-        <img src="img/imgab8.png" alt="">
-        <img src="img/imgab9.png" alt="">
-    </div>
-
-    <div class="aboutasimagesmob">
-        <img src="img/imgab1.png" alt="">
-        <img src="img/imgab2.png" alt="">
-        <img src="img/imgab3.png" alt="">
-        <img src="img/imgab1.png" alt="">
-        <img src="img/imgab2.png" alt="">
-        <img src="img/imgab3.png" alt="">
-    </div>
-    <div class="aboutasimagesmob">
-        <img src="img/imgab4.png" alt="">
-        <img src="img/imgab5.png" alt="">
-        <img src="img/imgab9.png" alt="">
-        <img src="img/imgab4.png" alt="">
-        <img src="img/imgab5.png" alt="">
-    </div>
-    <div class="aboutasimagesmob">
-        <img src="img/imgab6.png" alt="">
-        <img src="img/imgab7.png" alt="">
-        <img src="img/imgab8.png" alt="">
-        <img src="img/imgab6.png" alt="">
-        <img src="img/imgab7.png" alt="">
-        <img src="img/imgab8.png" alt="">
-    </div>
+}
 
 
-<div class="bigtite secbigtc"><h1 class="bigtite">Наши возможности</h1></div>
+.bimpltitle{
+    font-family: 'RalewayBlack';
+font-style: normal;
+font-weight: 900;
+font-size: 8vw;
+line-height: 7.813vw;
+margin-top: 6.354vh;
+}
 
-<div class="largecont seclc">
-    <div class="bigtite"><h1 class="bigtite">Возможности</h1></div>
-        <div class="firstslide slidecont">
-            <div class="contentslide"><span class="titleslide">Telegram Bot</span><p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><br><br><br><br><br><br><br><a href="" class="btnslide">Нам это надо</a></div>
-            <div class="pinslide"><ul>
-                <i class="gg-shape-circle activecircle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-            </ul></div>
-            <div><img src="" alt="" class="imgslide"></div>
-            <div class="pinslidemob"><ul>
-                <i class="gg-shape-circle activecircle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-                <i class="gg-shape-circle"></i>
-            </ul></div>
-            
-            <a href="" class="btnslidemob">Нам это надо</a>
-        </div>
+.aboutbimple span{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 1.250vw;
+line-height: 1.458vw;
+display: flex;
+align-items: flex-end;
+}
+
+
+
+.aboutbimplcall{
+    display: inline-grid;
+    grid-template-columns: 33.281vw auto;
+    margin-left: 7.396vw;
+    margin-top: 4vh;
+}
+
+#nav-icon7 {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    transition-duration: 1s;
+    margin: 48px auto 12px auto;
+    cursor: pointer;
+    display: none;
+}
+#nav-icon7 span {
+    height: 9px;
+    width: 60px;
+    background-color: #212121;
+    border-radius: 20px;
+    position: absolute;
+    transition-duration: .25s;
+}
+#nav-icon7 span:before {
+    left: 0;
+    position: absolute;
+    top: -18px;
+    height: 9px;
+    width: 60px;
+    background-color: #212121;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+#nav-icon7 span:after {
+    left: 0;
+    position: absolute;
+    top: 18px;
+    height: 9px;
+    width: 60px;
+    background-color: #212121;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+#nav-icon7.open span {
+    background: transparent;
+}
+#nav-icon7.open span:before {
+    transition: transform .25s;
+    transform: rotateZ(45deg);
+    top: 0;
+}
+#nav-icon7.open span:after {
+    transition: transform .25s;
+    transform: rotateZ(-405deg);
+    top: 0;
+}
+
+
+.callbtncont a{
+            background: #4E44CE;
+            box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
+            border-radius: 1.146vw;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 0.833vw;
+            line-height: 0.990vw;
+            padding: 0.938vw 2.188vw;
+            color: #F0F0F0;
+            text-align: center;
+            text-decoration: none;
+
+}
+
+.skipbottoncont{
+    margin-top: 13.06vh;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.skipbottoncont a{
+        font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.781vw;
+    line-height: 0.938vw;
+    color: #212121;
+   
+    text-decoration: none;
+}
+
+.aboutbimpanimcont{
+    text-align: center;
+    position: relative;
+    top: 3.125vh;
+    left: 3vw;
+    width: 34.896vw;
+}
+
+.aboutbimpanimcont video{
+    width: 34.896vw;
+}
+.smallcont {
+    margin: 4.271vw 10vw 0px 10vw;
+}
+
+.bigtite {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 5vw;
+line-height: 5.885vw;
+color: #212121;
+}
+
+.cardsaboutcont {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;  
+    margin-top: 2.969vw;
+    gap: 2.083vw;
+    width: 100%
+}
+
+.cardsabout {
+    background: #212121;
+/* тень */
+
+box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+border-radius: 2.604vw;
+    padding: 1.875vw 2.135vw;
+    width: 18.229vw;
+}
+
+.cardsabout h3{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 1.771vw;
+line-height: 2.083vw;
+/* identical to box height */
+margin: 0px 0px 2.708vw 0px;
+
+/* 66% */
+
+color: #726CC8;
+}
+
+.cardsabout p{
+    
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 0.781vw;
+line-height: 0.938vw;
+
+color: #C4C4C4;
+}
+
+
+
+.aboutasimages {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(9, 3.333vw);
+    gap: 0px 4.167vw;
+    margin-top: 2.083vw;
+    justify-content: center;
+}
+
+.circletext {
+    position: absolute;
+    top: 112.958vh;
+    z-index: -1;
+    left: 79vw;
+    width: 14.271vw;
+}
+
+
+.circletext img{
+    animation: rotsircl 10s linear infinite;
+    width: 14.271vw;
+}
+
+.aboutasimages img{
+    width: 3.333vw;
+}
+
+@keyframes rotsircl {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+
+.slidecont {
+    display: inline-grid;
+    grid-template-columns: 25.781vw auto 25.521vw;
+    margin-top: 2.448vw;
+    margin-left: 2.448vw;
+    margin-bottom: 2.448vw;
+}
+
+.titleslide {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 2.917vw;
+line-height: 3.438vw;
+color: #4E44CE;
+}
+
+
+
+.btnslide {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 0.833vw;
+line-height: 0.990vw;
+text-align: center;
+padding: 0.938vw 2.760vw;
+color: #F0F0F0;
+background: #4E44CE;
+box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
+border-radius: 1.146vw;
+}
+
+.pinslide {
+    margin: 0px 15.625vw;
+}
+
+.textslide {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 0.781vw;
+line-height: 0.938vw;
+
+color: #000000;
+}
+
+.gg-shape-circle{
+    width: 0.833vw !important;
+    height: 0.833vw !important;
+}
+
+.activecircle {
+    height: 1.302vw !important;
+    width: 1.302vw !important;
+    background-color: #4E44CE;
+}
+
+.pinslide ul {
+    display: grid;
+    justify-items: center;
+    gap: 2.344vw;
+}
+
+.walltxt *{
+    font-family: 'RalewayBlack';
+font-style: normal;
+font-weight: 900;
+font-size: 9.771vw;
+line-height: 2.083vw;
+/* identical to box height */
+margin: 0px 0px 2.708vw 0px;
+    position: relative;
+}
+
+
+.caontwalltxt{
+    position: relative;
+    top: -10vw
+}
+
+.callbackcont {
+    display: grid;
+    justify-content: center;
+    margin-top: -26.042vw;
+}
+
+input[type=text]{
+    border-radius: 1.146vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 3.125vw;
+    width: 14.948vw;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    font-size: 0.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    /* identical to box height */
+    color: #C4C4C4;
+    margin: 0px 2.083vw 2.083vw 0px;
+}
+
+
+
+input[type=submit]{
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
+    border-radius: 1.146vw;
+    border: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.833vw;
+    line-height: 0.990vw;
+    /* identical to box height */
+    padding: 0.938vw 2.188vw;
+    text-align: center;
+    color: #F0F0F0;
+    margin-top: 1.042vw;
+    margin-bottom: 2.083vw;
+}
+
+input[type=textarea]{
+     border-radius: 1.146vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 3.125vw;
+    width: 34.375vw;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    font-size: 0.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    /* identical to box height */
+    height: 8.333vw;
+    margin: 0px 0px 1.042vw 0px;
+    color: #C4C4C4;
+}
+
+input[type="checkbox"] {
+      background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    /* тень */
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    border-radius: 7px;
+    width: 1vw;
+    height: 1vw;
+    margin: 0.521vw;
+}
+
+form span{
+        font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.833vw;
+    line-height: 0.990vw;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.firstlargcont {
+    height: 91.85vh;
+    
+}
+
+#testspan{
+   display: none;
+}
+
+.aboutasimagesmob{
+    display: none;
+}
+
+.pinslidemob{
+    display: none;
+}
+
+
+.btnslidemob{
+    display: none;
+}
+
+.aboutasimagesmob{
+    display: none;
+}
+
+
+.secbigtc{
+    display: none;
+}
+
+
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 420px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navtarget{
+        display: none;
+    }    
+    #nav-icon7 {
+    width: 7.47vw;
+    height: 5.87vw;
+    position: relative;
+    transition-duration: 1s;
+    margin: 5.20vh 9.33vw auto auto;
+    cursor: pointer;
+    display: block;
+    }
+    #nav-icon7 span {
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        border-radius: 5.33vw;
+        position: absolute;
+        transition-duration: .25s;
+    }
+    #nav-icon7 span:before {
+        left: 0;
+        position: absolute;
+        top: -1.35vh;
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        content: "";
+        border-radius: 5.33vw;
+        transition-duration: .25s;
+    }
+    #nav-icon7 span:after {
+        left: 0;
+        position: absolute;
+        top: 1.35vh;
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        content: "";
+        border-radius: 5.33vw;
+        transition-duration: .25s;
+    }    
+    .logo img{
+        width: 17.07vw;
+    }  
+    .logo{
+        margin-top: 2.59vh;
+        margin-left: 5.87vw;
+    }
+    .largecont{
+        margin: 4.042vw 6.406vw 1.042vw 6.406vw;
+        padding: 0;
+        border-radius: 10.67vw;
+        height: 93.2vh;;
+    }
+    .navbar {
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 94px auto;
+        align-items: center;
+        justify-items: end;
+        justify-content: space-between;
+    }  
+    .lng{
+        display: none;
+    }
+    .aboutbimplsm{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;
+        justify-items: center;
+    }
+    .aboutbimplsm h1{
+        font-size: 17.07vw;
+        margin-top: 6.90vh;
+    }
+    .aboutbimple span {
+        position: absolute;
+        top: 52.08vh;
+        font-size: 4.27vw;
+        width: 59.47vw;
+        line-height: 20px;
+        text-align: center;
+    }
+    .aboutbimpanimcont {
+        text-align: center;
+    position: absolute;
+    top: 25.299999999999997vh;
+    left: 25vw;
+    width: 50.13vw;
+    }   
+    .aboutbimpanimcont video {
+        width: 50.13vw;
+        height: 25.13vh;
+    }
+    .callbtncont a {
+        background: #4E44CE;
+        box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+        border-radius: 5.87vw;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 4.27vw;
+        line-height: 0.990vw;
+        padding: 4.8vw 11.20vw;
+        color: #F0F0F0;
+        text-align: center;
+        text-decoration: none;
+    }
+    .aboutbimplcall{
+    grid-template-columns: 100%;
+    position: absolute;
+    top: 83vh;
+    left: 13vw;
+       
+    }
+    .skipbottoncont{
+        display: none;
+    }
+    .smallcont {
+    margin: 6.47vh 6.40vw 0px 6.40vw;
+    }
+    .bigtite{
+        font-size: 10.67vw;
+        font-family: 'RalewayBlack';
+        font-style: normal;
+        font-weight: 900;
+        line-height: 3.885vh;
+        margin-bottom: 3.695vh;
+    }
+    .cardsaboutcont{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .cardsabout:last-child h3{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 6.771vw;
+        line-height: 5.083vw;
+        margin: 0px 0px 5.542vh 0px;
+        color: #4E44CE;
+    }
+    .cardsabout {
+        width: 69.2vw;
+        background: #212121;
+        box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+        border-radius: 10.67vw;
+        padding: 4.06vh 8vw;
+        margin-bottom: 4.93vh;
+    }
+    .cardsabout:last-child {
+        width: 69.2vw;
+        background: #F0F0F0;;
+        box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+        border-radius: 10.67vw;
+        padding: 4.06vh 8vw;
+        margin-bottom: 4.93vh;
+    } 
+    .cardsabout:last-child p{
+        color: #000000;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.781vw;
+        line-height: 5.938vw;
+    }
+    .cardsabout h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.771vw;
+    line-height: 5.083vw;
+    margin: 0px 0px 5.542vh 0px;
+    color: #F0F0F0;
+    }
+    .circletext {
+    position: absolute;
+    top: 94vh;
+    z-index: -1;
+    left: 61vw;
+    width: 38.667vw
+    }    
+    .circletext img{
+        width: 38.667vw;
+    }
+    .aboutasimages{
+        display: none;
+    }
+    .seclc > .bigtite{
+        display: none;
+    }
+    .secbigtc{
+        padding: 10.400vw 6.400vw 0vw 6.400vw; 
+    }
+    .aboutasimagesmob {
+        width: 100%;
+        display: flex;
+        gap: 17px 5.16vw;
+        margin-top: 2.083vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
         
-       
-</div>
-
-
-  <div class="caontwalltxt">
-      <svg viewBox="0 0 1600 612" fill="none"  xmlns="http://www.w3.org/2000/svg">
-          <path id="text-curve" fill="none" d="M-96 293.623C38.3425 210.173 409.79 96.8444 820.837 311.141C1231.88 525.437 1575.55 388.752 1696 293.623"></path>
-              <text y="40" letter-spacing="-0.02em" style="transform:translateY(2rem)" fill="#202124" class="walltxt">
-                  <textPath href="#text-curve" id="raptx" startOffset="">
-                      <tspan fill="#4E44CE">BIMPLE</tspan> BIMPLE
-                      <tspan fill="#4E44CE">BIMPLE</tspan> BIMPLE 
-                      <tspan fill="#4E44CE">BIMPLE</tspan>
-                  </textPath>
-              </text>
-      </svg>
-  </div>
-   
-   <div class="smallcont">
-       <div class="callbackcont">
-           <h1 class="bigtite">Начать проект</h1>
-           <form action="" class="calbackform">
-               <div class="firinp">
-                    <input type="text" placeholder="ФИО">
-                    <input type="text" placeholder="Компания">
-               </div>
-               <div class="secinp">
-                    <input type="text" placeholder="E-mail:">
-                    <input type="text" placeholder="Телефон">
-               </div>
-               <input type="textarea" placeholder="Описание">
-               <br>
-               <input type="checkbox" value=""><span>Я согласен(а) на обработку персональных данных</span>
-                <br>
-               <input type="submit" value="Отправить заявку">
-           </form>
-       </div>
-       
-   </div>
- 
-
-   <script>
-       if(window.screen.width>=420){
-       let scrollObject = document.getElementById("raptx");
-        window.addEventListener("scroll", () => {
-            var a = window.pageYOffset -1500;
-            scrollObject.setAttribute('startOffset', `${a - 1000}`);
-            var info = document.getElementById('testspan');
-                if (window.pageYOffset == 200 || window.pageYOffset == 100 || window.pageYOffset == 300){
-                    $('html').stop().animate({scrollTop:0}, 300, 'linear');
-                };
-        });
-        };
-       
-       if(window.screen.width<=420){
-       let scrollObject = document.getElementById("raptx");
-        window.addEventListener("scroll", () => {
-            var a = window.pageYOffset -1000;
-            scrollObject.setAttribute('startOffset', `${a - 1000}`);
-            var info = document.getElementById('testspan');
-                if (window.pageYOffset == 200 || window.pageYOffset == 100 || window.pageYOffset == 300){
-                    $('html').stop().animate({scrollTop:0}, 300, 'linear');
-                };
-        });
-        };
-   </script>
-
-   
-<!-- функция колесика мыши -->         
-<!--   <script>
-    var elem = document.body;
-
-    if (elem.addEventListener) {
-      if ('onwheel' in document) {
-        // IE9+, FF17+
-        elem.addEventListener("wheel", onWheel);
-      } else if ('onmousewheel' in document) {
-        // устаревший вариант события
-        elem.addEventListener("mousewheel", onWheel);
-      } else {
-        // Firefox < 17
-        elem.addEventListener("MozMousePixelScroll", onWheel);
-      }
-    } else { // IE8-
-      elem.attachEvent("onmousewheel", onWheel);
+    }
+    .aboutasimagesmob img {
+        width: 11.467vw;
+        height: 11.467vw;
+    }
+    .seclc{
+        margin-top: 5.542vh;
+        padding: 9.867vw 4.557vw;
+    }
+    .slidecont {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 2.448vw;
+    margin-left: 0;
+    margin-bottom: 2.448vw;
+}
+    .pinslide{
+        display: none;
+    }
+    .btnslide{
+        display: none;
+    }
+    .titleslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9.067vw;
+    line-height: 3.438vw;
+    color: #4E44CE;
+}
+    .textslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 3.938vw;
+    color: #000000;
+    margin-top: 2.956vh;
+    margin-bottom: 6.650vw;
+}
+    .pinslidemob{
+        display: block;
+        margin: 0px 15.625vw;
+    }
+    .pinslidemob ul {
+    display: flex;
+    justify-items: center;
+    gap: 2.344vw;
+    margin-bottom: 3.571vh;
+}
+    .gg-shape-circle{
+    width: 4.833vw !important;
+    height: 4.833vw !important;
+    }
+    .btnslidemob {
+        display: block;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.267vw;
+    line-height: 5.067vw;
+    text-align: center;
+    padding: 4.800vw 14.133vw;
+    color: #F0F0F0;
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+    border-radius: 5.867vw;
+}
+    .cardsabout p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.781vw;
+    line-height: 5.938vw;
+    color: #C4C4C4;
+}
+    
+    .walltxt *{
+    font-family: 'RalewayBlack';
+font-style: normal;
+font-weight: 900;
+font-size: 45.771vw;
+line-height: 2.083vw;
+/* identical to box height */
+margin: 0px 0px 2.708vw 0px;
+    position: relative;
+}
+    
+    input[type=text]{
+    border-radius: 5.867vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 12.125vw;
+    width: 37.948vw;
+    box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+    font-size: 3.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    color: #C4C4C4;
+    margin: 0px 2.083vw 2.083vw 0px;
     }
 
 
-    function onWheel(e) {
-      e = e || window.event;
-      var delta = e.deltaY || e.detail || e.wheelDelta;
 
-      var info = document.getElementById('testspan');
-        var o = 0;
-        info.innerHTML  = +info.innerHTML + delta;
-        const element = document.querySelector(".this");        
-                var vid = document.getElementById('vid'); 
+input[type=submit]{
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+    border-radius: 5.867vw;
+    border: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.833vw;
+    line-height: 0.990vw;
+    padding: 4.938vw 3.188vw;
+    text-align: center;
+    color: #F0F0F0;
+    margin-top: 1.042vw;
+    margin-bottom: 2.083vw;
+}
 
-                function scrollPlay(){
-                          var frameNumber  = info.innerHTML / 1400;
-                          vid.currentTime  = frameNumber;     
-                }
-        if (info.innerHTML <= 2500 && info.innerHTML > -2000){
-                window.requestAnimationFrame(scrollPlay);
-        }else{
-                    document.getElementById('vid').play();
-                };
-        if (info.innerHTML > 3000){
-            document.body.style.overflowY = "scroll";
-                let href = document.querySelector(".this");
-                $('html, body').animate({
-                    scrollTop: $(href).offset().top
-                }, {
-                    duration: 500,
-                    easing: "linear"
-                });
-            
-            info.innerHTML = +info.innerHTML + delta - 10000000;
-            
-        }else{
-            
-        };          
-    };
-  </script> -->
+input[type=textarea]{
+     border-radius: 5.867vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 3.125vw;
+    width: 81.375vw;
+    box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+    font-size: 3.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    height: 22.333vw;
+    margin: 0px 0px 1.042vw 0px;
+    color: #C4C4C4;
+}
 
-   
-    
-</body>
-</html>
+input[type="checkbox"] {
+      background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    /* тень */
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    border-radius: 7px;
+    width: 4vw;
+    height: 4vw;
+    margin: 0.521vw;
+}
+
+form span{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.833vw;
+    line-height: 0.990vw;
+    color: #000000;
+}
+}
+
+
+
 
