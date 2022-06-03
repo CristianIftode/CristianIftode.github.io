@@ -532,17 +532,6 @@ form span{
 
 
 
-html, body {
-  overflow-x: hidden;
-}
-body {
-  position: relative
-}
-
-
-
-
-
 
 
 
@@ -551,7 +540,7 @@ body {
 
 @media screen and (max-width : 420px) {
     body{
-        overflow-x: hidden;
+       
     }
     .navtarget{
         display: none;
@@ -735,7 +724,7 @@ body {
     position: absolute;
     top: 110vh;
     z-index: -1;
-    left: 61vw;
+    left: 53vw;
     width: 38.667vw
     }    
     .circletext img{
