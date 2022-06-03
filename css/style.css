@@ -665,6 +665,7 @@ form span{
     display: flex;
     /* justify-items: center; */
     justify-content: center;
+    display: -webkit-flex;
 }
     .skipbottoncont{
         display: none;
