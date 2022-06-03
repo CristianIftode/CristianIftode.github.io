@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 
 .largecont{
     padding: 1.302vw 2.865vw;
-    margin: 1.042vw 6.406vw 1.042vw 6.406vw;
+    margin: 1vw 6.406vw 1.042vw 6.406vw;
     background-color: #e6e6e6;
     border-radius: 2.604vw;
     box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
@@ -150,7 +150,7 @@ align-items: flex-end;
 #nav-icon7 span {
     height: 9px;
     width: 60px;
-    background-color: #337AB7;
+    background-color: #212121;
     border-radius: 20px;
     position: absolute;
     transition-duration: .25s;
@@ -161,7 +161,7 @@ align-items: flex-end;
     top: -18px;
     height: 9px;
     width: 60px;
-    background-color: #337AB7;
+    background-color: #212121;
     content: "";
     border-radius: 20px;
     transition-duration: .25s;
@@ -172,7 +172,7 @@ align-items: flex-end;
     top: 18px;
     height: 9px;
     width: 60px;
-    background-color: #337AB7;
+    background-color: #212121;
     content: "";
     border-radius: 20px;
     transition-duration: .25s;
@@ -305,10 +305,10 @@ color: #C4C4C4;
 }
 
 .circletext {
-    position: relative;
-    top:-26.042vw;
-    z-index:1;
-    left: 70vw;
+    position: absolute;
+    top: 112.958vh;
+    z-index: -1;
+    left: 79vw;
     width: 14.271vw;
 }
 
@@ -331,7 +331,6 @@ color: #C4C4C4;
     transform: rotate(360deg)
   }
 }
-
 
 
 
@@ -415,154 +414,6 @@ margin: 0px 0px 2.708vw 0px;
     position: relative;
     top: -10vw
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width : 420px) {
-    .navtarget{
-        display: none;
-    }
-    #nav-icon7{
-        display: block;
-    }
-    
-    .navbar {
-        height: 64px;
-        width: 100%;
-        display: inline-grid;
-        grid-template-columns: 94px auto;
-        align-items: center;
-        justify-items: end;
-        justify-content: space-between;
-    }
-    
-    .lng{
-        display: none;
-    }
-    .aboutbimplsm{
-        display: grid;
-        grid-template-columns: 100%;
-        margin-left: 0;
-        justify-items: center;
-    }
-    
-    .aboutbimplcall{
-        grid-template-columns: 100%;
-        margin-left: 0px;
-        margin-top: 0px;
-        justify-items: center;
-    }
-    
-    .cardsaboutcont{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .cardsabout {
-        width: 100%;
-    }
-    .circletext{
-        top: -57.042vw;
-    }
-    
-    .aboutasimages {
-        width: 100%;
-        display: flex;
-        gap: 15px 14.16vw;
-        margin-top: 2.083vw;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .aboutasimages img {
-        width: 12.333vw;
-    }
-    
-    .slidecont {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 2.448vw;
-    margin-left: 2.448vw;
-    margin-bottom: 2.448vw;
-}
-    
-    .pinslide{
-        display: none;
-    }
-    .titleslide {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 7.917vw;
-    line-height: 3.438vw;
-    color: #4E44CE;
-}
-    .textslide {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.781vw;
-    line-height: 3.938vw;
-    color: #000000;
-}
-    
-    .btnslide {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3.833vw;
-    line-height: 0.990vw;
-    text-align: center;
-    padding: 1.938vw 3.76vw;
-    color: #F0F0F0;
-    background: #4E44CE;
-    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
-    border-radius: 1.146vw;
-}
-    
-    .cardsabout h3 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 6.771vw;
-    line-height: 5.083vw;
-    margin: 0px 0px 2.708vw 0px;
-    color: #726CC8;
-}
-    .cardsabout p {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4.781vw;
-    line-height: 5.938vw;
-    color: #C4C4C4;
-}
-}
-
-
 
 .callbackcont {
     display: grid;
@@ -654,9 +505,412 @@ form span{
 }
 
 #testspan{
+   display: none;
+}
+
+.aboutasimagesmob{
     display: none;
 }
 
-body {
-   
+.pinslidemob{
+    display: none;
 }
+
+
+.btnslidemob{
+    display: none;
+}
+
+.aboutasimagesmob{
+    display: none;
+}
+
+
+.secbigtc{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 420px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navtarget{
+        display: none;
+    }    
+    #nav-icon7 {
+    width: 7.47vw;
+    height: 5.87vw;
+    position: relative;
+    transition-duration: 1s;
+    margin: 5.20vh 9.33vw auto auto;
+    cursor: pointer;
+    display: block;
+    }
+    #nav-icon7 span {
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        border-radius: 5.33vw;
+        position: absolute;
+        transition-duration: .25s;
+    }
+    #nav-icon7 span:before {
+        left: 0;
+        position: absolute;
+        top: -1.35vh;
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        content: "";
+        border-radius: 5.33vw;
+        transition-duration: .25s;
+    }
+    #nav-icon7 span:after {
+        left: 0;
+        position: absolute;
+        top: 1.35vh;
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        content: "";
+        border-radius: 5.33vw;
+        transition-duration: .25s;
+    }    
+    .logo img{
+        width: 17.07vw;
+    }  
+    .logo{
+        margin-top: 2.59vh;
+        margin-left: 5.87vw;
+    }
+    .largecont{
+        margin: 4.042vw 6.406vw 1.042vw 6.406vw;
+        padding: 0;
+        border-radius: 10.67vw;
+        height: 76.97vh;
+    }
+    .navbar {
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 94px auto;
+        align-items: center;
+        justify-items: end;
+        justify-content: space-between;
+    }  
+    .lng{
+        display: none;
+    }
+    .aboutbimplsm{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;
+        justify-items: center;
+    }
+    .aboutbimplsm h1{
+        font-size: 17.07vw;
+        margin-top: 6.90vh;
+    }
+    .aboutbimple span {
+        position: absolute;
+        top: 48.08vh;
+        font-size: 4.27vw;
+        width: 59.47vw;
+        line-height: 20px;
+        text-align: center;
+    }
+    .aboutbimpanimcont {
+        text-align: center;
+        position: relative;
+        top: -3.7vh;
+        left: 0vw;
+        width: 50.13vw;
+    }   
+    .aboutbimpanimcont video {
+        width: 50.13vw;
+    }
+    .callbtncont a {
+        background: #4E44CE;
+        box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+        border-radius: 5.87vw;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 4.27vw;
+        line-height: 0.990vw;
+        padding: 4.8vw 11.20vw;
+        color: #F0F0F0;
+        text-align: center;
+        text-decoration: none;
+    }
+    .aboutbimplcall{
+        grid-template-columns: 100%;
+        margin-left: 0px;
+        margin-top: 22vh;
+        justify-items: center;
+    }
+    .skipbottoncont{
+        display: none;
+    }
+    .smallcont {
+    margin: 6.47vh 6.40vw 0px 6.40vw;
+    }
+    .bigtite{
+        font-size: 10.67vw;
+        font-family: 'RalewayBlack';
+        font-style: normal;
+        font-weight: 900;
+        line-height: 3.885vh;
+        margin-bottom: 3.695vh;
+    }
+    .cardsaboutcont{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .cardsabout:last-child h3{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 6.771vw;
+        line-height: 5.083vw;
+        margin: 0px 0px 5.542vh 0px;
+        color: #4E44CE;
+    }
+    .cardsabout {
+        width: 69.2vw;
+        background: #212121;
+        box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+        border-radius: 10.67vw;
+        padding: 4.06vh 8vw;
+        margin-bottom: 4.93vh;
+    }
+    .cardsabout:last-child {
+        width: 69.2vw;
+        background: #F0F0F0;;
+        box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+        border-radius: 10.67vw;
+        padding: 4.06vh 8vw;
+        margin-bottom: 4.93vh;
+    } 
+    .cardsabout:last-child p{
+        color: #000000;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.781vw;
+        line-height: 5.938vw;
+    }
+    .cardsabout h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.771vw;
+    line-height: 5.083vw;
+    margin: 0px 0px 5.542vh 0px;
+    color: #F0F0F0;
+    }
+    .circletext {
+    position: absolute;
+    top: 94vh;
+    z-index: -1;
+    left: 61vw;
+    width: 38.667vw
+    }    
+    .circletext img{
+        width: 38.667vw;
+    }
+    .aboutasimages{
+        display: none;
+    }
+    .seclc > .bigtite{
+        display: none;
+    }
+    .secbigtc{
+        padding: 10.400vw 6.400vw 0vw 6.400vw; 
+    }
+    .aboutasimagesmob {
+        width: 100%;
+        display: flex;
+        gap: 17px 5.16vw;
+        margin-top: 2.083vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+    .aboutasimagesmob img {
+        width: 11.467vw;
+        height: 11.467vw;
+    }
+    .seclc{
+        margin-top: 5.542vh;
+        padding: 9.867vw 4.557vw;
+    }
+    .slidecont {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 2.448vw;
+    margin-left: 0;
+    margin-bottom: 2.448vw;
+}
+    .pinslide{
+        display: none;
+    }
+    .btnslide{
+        display: none;
+    }
+    .titleslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9.067vw;
+    line-height: 3.438vw;
+    color: #4E44CE;
+}
+    .textslide {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 3.938vw;
+    color: #000000;
+    margin-top: 2.956vh;
+    margin-bottom: 6.650vw;
+}
+    .pinslidemob{
+        display: block;
+        margin: 0px 15.625vw;
+    }
+    .pinslidemob ul {
+    display: flex;
+    justify-items: center;
+    gap: 2.344vw;
+    margin-bottom: 3.571vh;
+}
+    .gg-shape-circle{
+    width: 4.833vw !important;
+    height: 4.833vw !important;
+    }
+    .btnslidemob {
+        display: block;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.267vw;
+    line-height: 5.067vw;
+    text-align: center;
+    padding: 4.800vw 14.133vw;
+    color: #F0F0F0;
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+    border-radius: 5.867vw;
+}
+    .cardsabout p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.781vw;
+    line-height: 5.938vw;
+    color: #C4C4C4;
+}
+    
+    .walltxt *{
+    font-family: 'RalewayBlack';
+font-style: normal;
+font-weight: 900;
+font-size: 45.771vw;
+line-height: 2.083vw;
+/* identical to box height */
+margin: 0px 0px 2.708vw 0px;
+    position: relative;
+}
+    
+    input[type=text]{
+    border-radius: 5.867vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 12.125vw;
+    width: 37.948vw;
+    box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+    font-size: 3.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    color: #C4C4C4;
+    margin: 0px 2.083vw 2.083vw 0px;
+    }
+
+
+
+input[type=submit]{
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+    border-radius: 5.867vw;
+    border: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.833vw;
+    line-height: 0.990vw;
+    padding: 4.938vw 3.188vw;
+    text-align: center;
+    color: #F0F0F0;
+    margin-top: 1.042vw;
+    margin-bottom: 2.083vw;
+}
+
+input[type=textarea]{
+     border-radius: 5.867vw;
+    background: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    line-height: 3.125vw;
+    width: 81.375vw;
+    box-shadow: 0px 4px 15px rgb(145 145 145 / 20%);
+    font-size: 3.833vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 1.042vw;
+    height: 22.333vw;
+    margin: 0px 0px 1.042vw 0px;
+    color: #C4C4C4;
+}
+
+input[type="checkbox"] {
+      background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    /* тень */
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
+    border-radius: 7px;
+    width: 4vw;
+    height: 4vw;
+    margin: 0.521vw;
+}
+
+form span{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.833vw;
+    line-height: 0.990vw;
+    color: #000000;
+}
+}
+
+
+
+
