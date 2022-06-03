@@ -667,10 +667,10 @@ body {
     grid-template-columns: 100%;
     position: absolute;
     top: 84vh;
-    left: 22vw;
+    left: 20vw;
     margin-left: 0;
     margin-top: 0;
-    right: 0vw;    
+    right: 21vw;    
     }
     .skipbottoncont{
         display: none;
