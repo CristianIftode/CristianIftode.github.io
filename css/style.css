@@ -606,7 +606,7 @@ body {
         margin: 4.042vw 6.406vw 1.042vw 6.406vw;
         padding: 0;
         border-radius: 10.67vw;
-        height: 90.2vh;;
+        height: 93.2vh;;
     }
     .navbar {
         width: 100%;
@@ -665,7 +665,7 @@ body {
     .aboutbimplcall{
     grid-template-columns: 100%;
     position: absolute;
-    top: 80vh;
+    top: 82vh;
     left: 13vw;
        
     }
