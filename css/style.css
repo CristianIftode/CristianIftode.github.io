@@ -532,7 +532,12 @@ form span{
 
 
 
-
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 
 
 
@@ -912,3 +917,7 @@ form span{
     color: #000000;
 }
 }
+
+
+
+
