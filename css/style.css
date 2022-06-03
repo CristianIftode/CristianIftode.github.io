@@ -670,7 +670,8 @@ body {
     left: 20vw;
     margin-left: 0;
     margin-top: 0;
-    right: 10vw;    
+    right: 10vw;
+    display: block;
     }
     .skipbottoncont{
         display: none;
