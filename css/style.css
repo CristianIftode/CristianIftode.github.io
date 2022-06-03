@@ -647,7 +647,7 @@ form span{
         font-weight: 900;
         font-size: 4.27vw;
         line-height: 0.990vw;
-        padding: 4.8vw 11.20vw;
+        padding: 16px 33px;
         color: #F0F0F0;
         text-align: center;
         text-decoration: none;
@@ -657,7 +657,7 @@ form span{
     top: 87vh;
     margin-top: 0;
     display: block;
-    right: 21vw;
+    right: 23vw;
     }
     .skipbottoncont{
         display: none;
