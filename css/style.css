@@ -731,7 +731,7 @@ body {
     }
     .circletext {
     position: absolute;
-    top: 94vh;
+    top: 110vh;
     z-index: -1;
     left: 61vw;
     width: 38.667vw
