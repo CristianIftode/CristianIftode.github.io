@@ -662,8 +662,9 @@ form span{
     }
     
     .aboutbimplcont {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    /* justify-items: center; */
+    justify-content: center;
 }
     .skipbottoncont{
         display: none;
