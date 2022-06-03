@@ -626,8 +626,8 @@ body {
         justify-items: center;
     }
     .aboutbimplsm h1{
-        font-size: 17.07vw;
-        margin-top: 6.90vh;
+        position: relative;
+        z-index: 1;
     }
     .aboutbimple span {
         position: absolute;
@@ -665,9 +665,10 @@ body {
     .aboutbimplcall{
     grid-template-columns: 100%;
     position: absolute;
-    top: 82vh;
-    left: 13vw;
-       
+    top: 84vh;
+    left: 22vw;
+    margin-left: 0;
+    margin-top: 0;
     }
     .skipbottoncont{
         display: none;
