@@ -664,14 +664,12 @@ body {
         text-decoration: none;
     }
     .aboutbimplcall{
-    grid-template-columns: 100%;
     position: absolute;
     top: 84vh;
-    left: 20vw;
     margin-left: 0;
     margin-top: 0;
-    right: 10vw;
     display: block;
+    margin-left: 14vw;
     }
     .skipbottoncont{
         display: none;
