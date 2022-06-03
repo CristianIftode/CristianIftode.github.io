@@ -654,10 +654,10 @@ form span{
     }
     .aboutbimplcall{
     position: absolute;
-    top: 84vh;
+    top: 87vh;
     margin-top: 0;
     display: block;
-    margin-left: 14%;
+    right: 21vw;
     }
     .skipbottoncont{
         display: none;
