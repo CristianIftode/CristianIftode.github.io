@@ -641,9 +641,8 @@ body {
 
 @media screen and (max-width : 420px) {
 
-    html,
-    body {
-        /* Убирает прокрутку по горизонтале, для мобильной версии */
+   
+    .slidermob{
         overflow-x: hidden;
     }
 
