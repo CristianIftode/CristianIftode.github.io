@@ -347,3 +347,6 @@ template {
 [hidden] {
   display: none;
 }
+.imgslidcont {
+    margin-left: 37vw;
+}
