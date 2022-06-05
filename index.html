@@ -22,31 +22,38 @@
 <body>
     <div class="largecont firstlargcont" id="firstlargcont">
         <div class="navbar">
-            <div class="logo"><img alt="" src="img/logo.svg"></div>
+            <a href="index.html"><div class="logo"><img alt="" src="img/logo.svg"></div></a>
             <div class="navtarget">
                 <ul>
-                    <a href="#">
+                    <a href="index.html">
                         <li>Главная</li>
                     </a>
-                    <a href="#">
+                    <a href="projects.html">
                         <li>Проекты</li>
                     </a>
-                    <a href="#">
+                    <a href="contacts.html">
                         <li>Контакты</li>
                     </a>
-                    <a href="#">
+                    <a href="about.html">
                         <li>О нас</li>
                     </a>
                 </ul>
             </div>
-            <div id="nav-icon7">
+            <div class="menu-triger" id="nav-icon7">
                 <span></span>
             </div>
+            
+         
             <div class="lng">
                 <span><a href="#">RU</a>/<a href="#">ENG</a></span>
                 <span id="testspan">0</span>
             </div>
         </div>
+        
+       
+        
+        
+        
         <div class="aboutbimplcont">
             <div class="aboutbimplsm">
                 <div class="aboutbimple">
@@ -60,9 +67,28 @@
             <div class="aboutbimplcall">
                 <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
             </div>
-
         </div>
     </div>
+    
+     <div class="navbarmob menu-popup">
+            <div class="navtargetmob">
+                <ul>
+                    <a href="index.html">
+                        <li>Главная</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Проекты</li>
+                    </a>
+                    <a href="contacts.html">
+                        <li>Контакты</li>
+                    </a>
+                    <a href="about.html">
+                        <li>О нас</li>
+                    </a>
+                </ul>
+            </div>
+     
+        </div>
 
     <div class="smallcont this" id="nas">
         <div class="bigtite">
@@ -502,7 +528,49 @@
 
 
 
-
+    <script>
+    
+   $(function() {
+	var $menu_popup = $('.menu-popup');
+ 
+	$(".menu-triger").click(function(){
+		$('body').addClass('body_pointer');		
+		$menu_popup.show();
+		$menu_popup.animate(
+			{right: parseInt($menu_popup.css('left'),1) == 0 ? -$menu_popup.outerWidth() : 0}, 
+			300
+		);
+		return false;
+	});	
+	
+	$(".menu-close").click(function(){
+		$('body').removeClass('body_pointer');		
+		$menu_popup.animate(
+			{right: parseInt($menu_popup.css('right'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
+			300, 
+			function(){
+				$menu_popup.hide(0);
+			}
+		);
+		return false;
+	});	
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu-popup').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.animate(
+				{right: parseInt($menu_popup.css('right'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
+				300, 
+				function(){
+					$menu_popup.hide(0);
+				}
+			);
+		}
+	});
+});
+        
+       
+    </script>
 
 
 
