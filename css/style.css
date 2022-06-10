@@ -208,6 +208,72 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+
+
+
+
+
+#nav-icon8 {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    transition-duration: 1s;
+    margin: 48px auto 12px auto;
+    cursor: pointer;
+    display: none;
+}
+
+#nav-icon8 span {
+    height: 9px;
+    width: 60px;
+    background-color: #212121;
+    border-radius: 20px;
+    position: absolute;
+    transition-duration: .25s;
+}
+
+#nav-icon8 span:before {
+    left: 0;
+    position: absolute;
+    top: -18px;
+    height: 9px;
+    width: 60px;
+    background-color: #212121;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+
+#nav-icon8 span:after {
+    left: 0;
+    position: absolute;
+    top: 18px;
+    height: 9px;
+    width: 60px;
+    background-color: #212121;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+
+#nav-icon7.open span {
+    background: transparent;
+}
+
+#nav-icon7.open span:before {
+    transition: transform .25s;
+    transform: rotateZ(45deg);
+    top: 0;
+}
+
+#nav-icon7.open span:after {
+    transition: transform .25s;
+    transform: rotateZ(-405deg);
+    top: 0;
+}
+
+
 .callbtncont a {
     background: #4E44CE;
     box-shadow: 0px 4px 20px rgba(78, 68, 206, 0.5);
@@ -257,7 +323,7 @@ body::-webkit-scrollbar-thumb {
     margin: 4.271vw 10vw 0px 10vw;
 }
 
-.lastblockcont{
+.lastblockcont {
     margin: 32.271vw 10vw 0px 10vw;
 }
 
@@ -359,7 +425,7 @@ body::-webkit-scrollbar-thumb {
     --bs-btn-hover-color: #fff !important;
     --bs-btn-hover-bg: #4e44ce7 !important;
     --bs-btn-hover-border-color: #4e44cec43 !important;
-    --bs-btn-focus-shadow-rgb: 60,153,110 !important;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110 !important;
     --bs-btn-active-color: #fff !important;
     --bs-btn-active-bg: #4e44ce !important;
     --bs-btn-active-border-color: #4e44ce !important;
@@ -579,7 +645,7 @@ body {
 }
 
 .swiper-wrapper {
-    height: 38.72vh !important;
+    height: 22.72vw !important;
 }
 
 .swiper-slide {
@@ -766,22 +832,192 @@ body {
 }
 
 .firinp {
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
     gap: 2vw;
-    }
+}
 
-    .secinp {
-        display: flex;
-        justify-content: center;
-        gap: 2vw;
-    }
+.secinp {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+
+
+#fullpage .section {
+    display: flex;
+}
+
+#fullpage .section .colorbackg {
+    position: absolute;
+    height: 105vh;
+}
+
+#fullpage .section .mocupbackgr {
+    position: absolute;
+    z-index: -1;
+    right: -19vw;
+    height: 105vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#fullpage .section .colo {
+    height: 100vh;
+    width: 65.10vw;
+}
+
+#fullpage .section .imgbg {
+    height: 100vh;
+    width: 116vw;
+    filter: blur(4px);
+}
+
+.mockup {
+    position: absolute;
+    left: 57vw;
+    top: 31vh;
+    z-index: 9999;
+}
+
+#fullpage .logo img {
+    width: 6vw;
+}
+
+.mockup img {
+    width: 37vw
+}
+
+#fullpage .section:nth-of-type(2n) .mockup {
+    position: absolute;
+    left: 22vw;
+    top: 31vh;
+    z-index: 9999;
+}
+
+
+
+
+
+#fullpage .section .content {
+    position: absolute;
+    padding: 2vw;
+}
+
+
+#fullpage .section:nth-of-type(2n) .content {
+    position: absolute;
+    right: 0vw;
+}
+
+
+#fullpage .section:nth-of-type(2n) {
+    display: flex;
+}
+
+#fullpage .section:nth-of-type(2n) .colorbackg {
+    position: absolute;
+    height: 105vh;
+    right: 0vw;
+}
+
+#fullpage .section:nth-of-type(2n) .colorbackg .logo {
+    position: absolute;
+    left: 51vw;
+}
+
+#fullpage .section:nth-of-type(2n) .mocupbackgr {
+    position: absolute;
+    z-index: -1;
+    left: -19vw;
+    height: 105vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#fullpage .section:nth-of-type(2n) .colo {
+    height: 100vh;
+    width: 65.10vw;
+}
+
+#fullpage .section:nth-of-type(2n) .imgbg {
+    height: 100vh;
+    width: 116vw;
+    filter: blur(4px);
+}
+
+
+#fullpage .section:nth-of-type(2n) .fullcontlist {
+    margin-left: 7vw;
+}
+
+
+.mkup {
+    display: block;
+}
+
+.mkupmob {
+    display: none;
+
+}
+
+.navbarmob{
+    display: none;
+}
+
 
 @media screen and (max-width : 420px) {
+    .mkup {
+        display: none;
+    }
+
+    .navbarmob{
+       
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+border: 1px solid #E9E9E9;
+backdrop-filter: blur(30px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 40px 0px 0px 40px;
+        z-index: 1;
+    width: 80%;
+    top: 0;
+    height: 93%;
+    right: 0px;
+    }
+    
+    .navbarmob li{
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 11.27vw;
+    line-height: 12.99vw;
+        padding: 16px 33px;
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .navtargetmob{
+        top: 28vh;
+    position: absolute;
+    z-index: 4;
+    }
+    .mkupmob {
+        display: block;
+        position: absolute;
+        width: 92vw;
+        margin-top: 36vh;
+        z-index: 2;
+        margin-left: 5vw;
+    }
 
     .caontwalltxt {
-    margin-top: -5vh;
-}
+        margin-top: -5vh;
+    }
+
     .slidermob {
         overflow-x: hidden;
     }
@@ -801,6 +1037,7 @@ body {
         transition-duration: 1s;
         margin: 5.20vh 9.33vw auto auto;
         cursor: pointer;
+        z-index: 0;
         display: block;
     }
 
@@ -836,9 +1073,57 @@ body {
         border-radius: 5.33vw;
         transition-duration: .25s;
     }
+    
+    
+    
 
     .logo img {
         width: 17.07vw;
+    }
+    
+    
+    #nav-icon8 {
+        width: 7.47vw;
+        height: 5.87vw;
+        position: relative;
+        transition-duration: 1s;
+        margin: 5.20vh 9.33vw auto auto;
+        cursor: pointer;
+        z-index: 2;
+        display: block;
+    }
+
+    #nav-icon8 span {
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        border-radius: 5.33vw;
+        position: absolute;
+        transition-duration: .25s;
+    }
+
+    #nav-icon8 span:before {
+        left: 0;
+        position: absolute;
+        top: -1.35vh;
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        content: "";
+        border-radius: 5.33vw;
+        transition-duration: .25s;
+    }
+
+    #nav-icon8 span:after {
+        left: 0;
+        position: absolute;
+        top: 1.35vh;
+        height: 1.33vw;
+        width: 7.47vw;
+        background-color: #212121;
+        content: "";
+        border-radius: 5.33vw;
+        transition-duration: .25s;
     }
 
     .logo {
@@ -878,6 +1163,10 @@ body {
         position: relative;
         z-index: 1;
         font-size: 17.07vw;
+    }
+    
+    #fullpage .logo img {
+    width: 17vw;
     }
 
     .aboutbimple span {
@@ -1005,11 +1294,11 @@ body {
 
     .circletext {
         position: absolute;
-    top: 113vh;
-    z-index: -1;
-    left: 60vw;
-    width: 38.667vw;
-    overflow-x: hidden;
+        top: 113vh;
+        z-index: -1;
+        left: 60vw;
+        width: 38.667vw;
+        overflow-x: hidden;
         overflow-y: hidden;
     }
 
@@ -1322,17 +1611,190 @@ body {
         gap: 2vw;
     }
 
+
+    #fullpage .section {
+        display: flex;
+    }
+
+    #fullpage .section .colorbackg {
+        position: absolute;
+        height: 105vh;
+    }
+
+    #fullpage .section .mocupbackgr {
+        position: absolute;
+        z-index: -1;
+        right: -59vw;
+        height: 105vh;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    #fullpage .section .colo {
+        height: 100vh;
+        width: 85.10vw;
+    }
+
+    #fullpage .section .imgbg {
+        height: 100vh;
+        width: 300vw;
+        filter: blur(4px);
+    }
+
+    .mockup {
+        position: absolute;
+    }
+
+    #fullpage .section .content {
+        position: absolute;
+        padding: 2vw;
+    }
+
+
+    #fullpage .section:nth-of-type(2n) .content {
+        position: absolute;
+        right: 0vw;
+        width: 64vw;
+    }
+
+
+    #fullpage .section:nth-of-type(2n) {
+        display: flex;
+    }
+
+    #fullpage .section:nth-of-type(2n) .colorbackg {
+        position: absolute;
+        height: 105vh;
+        right: 0vw;
+    }
+
+    #fullpage .section:nth-of-type(2n) .colorbackg .logo {
+        position: absolute;
+        left: 34vw;
+    }
+
+    #fullpage .section:nth-of-type(2n) .mocupbackgr {
+        position: absolute;
+        z-index: -1;
+        left: -19vw;
+        height: 105vh;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    #fullpage .section:nth-of-type(2n) .colo {
+        height: 100vh;
+        width: 85.1vw;
+    }
+
+    #fullpage .section:nth-of-type(2n) .imgbg {
+        height: 100vh;
+        width: 116vw;
+        filter: blur(4px);
+    }
+
+    .fullcontlist {
+        width: 50vw;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        margin: 7vw 2vw 1vw 2vw;
+        display: none;
+    }
+
+    .fullcontlist span {
+        font-size: 2.6vw;
+    }
+
+    .fullcontlist h3 {
+        font-size: 4.5vw;
+    }
+
+    .fullcontlist {}
+
+    #fullpage > * {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .fulltitle h2 {
+        font-size: 6vw;
+        margin-top: 5.44vh;
+    }
+
+    #fullpage .section:nth-of-type(2n) .fulltitle h2 {
+        font-size: 6vw;
+        margin-top: 12.44vh;
+    }
+
+    .fulltitle {}
+    #fullpage .callbtncont a {
+    background: #4E44CE;
+    box-shadow: 0px 4px 20px rgb(78 68 206 / 50%);
+    border-radius: 5.87vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.27vw;
+    line-height: 0.990vw;
+    padding: 16px 24px;
+    color: #F0F0F0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
 }
 
 .page-footer {
-   background: #4E44CE;
+    background: #4E44CE;
 }
 
-.page-footer *{
+.page-footer * {
     line-height: 3.125vw;
-    font-size: 1.333vw;
+    font-size: 0.333vw;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 900;
     color: #fff;
 }
+
+
+
+.fullcontlist {
+    width: 40vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    margin: 1vw 2vw 1vw 2vw;
+}
+
+.fullcontlist span {
+    font-size: 1.2vw;
+}
+
+.fullcontlist h3 {
+    font-size: 2.5vw;
+}
+
+.fullcontlist {}
+
+#fullpage > * {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+#fullpage .section:nth-of-type(2n) .fulltitle h2 {
+    font-size: 6vw;
+    margin-top: 12.44vh;
+}
+
+.fulltitle h2 {
+    font-size: 6vw;
+    margin-top: 5.44vh;
+}
+
+
+.fulltitle {}
