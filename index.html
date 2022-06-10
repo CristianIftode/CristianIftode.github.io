@@ -584,11 +584,6 @@
                 scrollObject.setAttribute('startOffset', `${a - 1000}`);
                 var info = document.getElementById('testspan');
                 info.innerHTML = +info.innerHTML + window.pageYOffset;
-                if (info.innerHTML < 10050) {
-                    $('html').stop().animate({
-                        scrollTop: 0
-                    }, 300, 'linear');
-                };
             });
         };
 
@@ -599,11 +594,6 @@
                 scrollObject.setAttribute('startOffset', `${a - 1000}`);
                 var info = document.getElementById('testspan');
                 info.innerHTML = +info.innerHTML + window.pageYOffset;
-                if (info.innerHTML < 1000) {
-                    $('html').stop().animate({
-                        scrollTop: 0
-                    }, 2, 'linear');
-                };
             });
         };
     </script>
