@@ -240,7 +240,10 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
+#fullpage .section a {
+            text-decoration: none;
+    color: #fff;
+    }
 
 
 
@@ -1769,7 +1772,7 @@ body {
     }
     
     
-     #fullpage .section .logo span {
+     #fullpage .section a {
             text-decoration: none;
     color: #fff;
     }
