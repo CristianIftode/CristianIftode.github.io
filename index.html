@@ -20,7 +20,7 @@
 </head>
 
 <body style="overflow-x: hidden">
-    <div class="largecont firstlargcont" id="firstlargcont">
+    <div class="largecont firstlargcont fixed" id="firstlargcont">
         <div class="navbar">
             <a href="index.html">
                 <div class="logo"><img alt="" src="img/logo.svg"></div>
@@ -644,7 +644,44 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    
+    <script>
+        $(document).ready(function() {
 
+		var element = $(".firstlargcont");
+		var height_el = element.offset().top;
+		var element_stop = $(".this");
+		var height_el_stop = element_stop.offset().top ;
+		
+		$(".fixed_block_position").css({
+			"width": element.outerWidth(),
+			"height": element.outerHeight()
+		});
+        
+		$(window).scroll(function() {
+          
+			if(($(window).scrollTop()) > height_el_stop - element.outerHeight()) {
+				
+				element.css({
+				}).removeClass("fixed").addClass("absolute");
+			
+			} else {
+                    if($(window).scrollTop() > height_el) {
+					
+					element.addClass("fixed").removeClass("absolute").attr("style", "");
+				
+				} else {
+					
+				
+				
+				}
+				
+			}
+  
+		});
+
+	   });          
+    </script>
 
     <!--    Скрипт главной анимации-->
     <script>
@@ -657,22 +694,6 @@
             })
 
             // Добавить привязки анимации к элементам
-            lax.addElements('.firstlargcont',
-                {
-                scrollY: {
-                scale: [
-                    [1, 500],
-                    [1, 1.148]
-                ],
-                translateY: [
-                    [1, 'elHeight*5.5'],{
-                    500: [1, 'elHeight*5.5'],
-                    2000:[1, 'elHeight*5.5']
-                    }
-                ]
-            }            
-                            
-            })
             
             lax.addElements('.bimpltitle',
                 {
@@ -687,6 +708,17 @@
                 opacity: [
                     [1, 500],
                     [1, 0]
+                ]
+            }            
+                            
+            })
+            
+            lax.addElements('.firstlargcont',
+                {
+                scrollY: {
+                scale: [
+                    [1, 400, 'screenHeight*3.7', 'screenHeight*4.5'],
+                    [1, 1.2, 1.2, 1]
                 ]
             }            
                             
@@ -710,11 +742,11 @@
                 {
                 scrollY: {
                 scale: [
-                    [300, 1000],
+                    [500, 1000],
                     [1, 30]
                 ],
                     translateX: [
-                    [1, 500],
+                    [1, 540],
                     {
                     500: [1,25],
                     1400:[1, 'screenWidth/4.65']
@@ -722,10 +754,10 @@
                 ],
                     
                     translateY: [
-                    [200, 'elHeight*50'],
+                    [500, 'elHeight*50'],
                     {
-                    500: [1,'elHeight*15'],
-                    1400:[1, 'screenWidth/4.65']
+                    500: [1,'elHeight*20'],
+                    1400:[1, 'screenWidth/2']
                     }
                 ],
                      
