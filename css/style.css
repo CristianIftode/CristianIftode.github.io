@@ -588,20 +588,12 @@ body::-webkit-scrollbar-thumb {
     top: 7vh;
 }
 
-.cascadtextleft{
+.cascadtextcont p{
     position: relative;
     left: -20vw;
     opacity: 0;
-    font-size: 5vh;
+    font-size: 10vh;
 }
-
-.cascadtextright{
-    position: relative;
-    right: -20vw;
-    opacity: 0;
-    font-size: 5vh;
-}
-
 
 .callbackcont {
     display: grid;
@@ -2026,5 +2018,12 @@ body {
     top: 2vh;
     left: 2vw;
     font-size: 4.3vw;
+}
+
+.cascadtextcont p{
+    position: relative;
+    left: -20vw;
+    opacity: 0;
+    font-size: 5vh;
 }
 }
