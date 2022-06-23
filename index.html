@@ -22,6 +22,7 @@
 </head>
 
 <body style="overflow-x: hidden">
+   
     <div class="largecont firstlargcont fixed" id="firstlargcont">
         <div class="navbar">
             <a href="index.html">
@@ -94,14 +95,9 @@
                 <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
             </div>
             <div class="cascadtextcont">
-                 <p class="cascadtextleft">Лэндинги</p>
-                 <p class="cascadtextright">#вебстудия</p>
-                 <p class="cascadtextleft">Интернет магазины</p>
-                 <p class="cascadtextright">web desing</p>
-                 <p class="cascadtextleft">Корпоративный</p>
-                 <p class="cascadtextright">#top50</p>
-                 <p class="cascadtextleft">Иформационный</p>
-                 <p class="cascadtextright">Развитие</p>
+                 <p class="cascadtext1">Лэндинги</p>
+                 <p class="cascadtext2">#вебстудия</p>
+                 <div class="lax lax_preset_seesaw:140:10"><p class="cascadtext3">web desing</p></div>
             </div>
         </div>
     </div>
@@ -696,6 +692,7 @@
 
     <!--    Скрипт главной анимации-->
     <script>
+        if (window.screen.width >= 420) {
         window.onload = function() {
             lax.init()
 
@@ -710,15 +707,15 @@
                 {
                 scrollY: {
                 translateX: [
-                    [1, 500],
+                    [1, 'elHeight*3.4','elHeight*20', 'elHeight*25'],
                     {
-                    500: [1,1],
-                    1400: [1, 'screenWidth/5']
+                    500: [1,1,1,1],
+                    1400: [1, 'pageWidth/5','pageWidth/5',1]
                     }
                 ],  
                 opacity: [
-                    [1, 500],
-                    [1, 0]
+                    [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                    [1, 0,0,1]
                 ]
             }            
                             
@@ -728,7 +725,7 @@
                 {
                 scrollY: {
                 scale: [
-                    [1, 400, 'screenHeight*3.7', 'screenHeight*4.5'],
+                    [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
                     [1, 1.2, 1.2, 1]
                 ]
             }            
@@ -741,8 +738,8 @@
                 {
                 scrollY: {
                 opacity: [
-                    [1, 500],
-                    [1, 0]
+                    [1, 'elHeight', 'elHeight*5', 'elHeight*7'],
+                    [1, 0, 0, 1]
                 ]
             }            
                             
@@ -753,28 +750,28 @@
                 {
                 scrollY: {
                 scale: [
-                    [500, 1000, 'screenHeight*4.5'],
-                    [1, 30, 1]
+                    ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
+                    [1, 30, 30, 1]
                 ],
                     translateX: [
-                    [1, 540],
+                    [1, 'elWidth*5', 'elWidth*23', 'elWidth*29'],
                     {
-                    500: [1,25],
-                    1400:[1, 'screenWidth/4.65']
+                    500: [1,25, 25, 1],
+                    1400:[1, 'elWidth*3.16','elWidth*3.16', 1]
                     }
                 ],
                     
                     translateY: [
-                    [500, 'elHeight*50'],
+                    [500, 'elHeight*5', 'elHeight*16', 'elHeight*18'],
                     {
-                    500: [1,'elHeight*20'],
-                    1400:[1, 'screenWidth/2']
+                    500: [0,'elHeight*20', 'elHeight*20', 0],
+                    1400:[0, 'elHeight', 'elHeight', 0]
                     }
                 ],
                      
                 opacity: [
-                    [700, 800],
-                    [1, 0]
+                    ['elWidth*5', 'elWidth*6', 'elWidth*20','elWidth*25'],
+                    [1, 0, 0, 1]
                 ]
             }            
                             
@@ -786,8 +783,8 @@
                 scrollY: {
                      
                     opacity: [
-                         [1, 500],
-                        [1, 0]
+                         [1, 'elWidth', 'elWidth*6','elWidth*6.5'],
+                        [1, 0,0,1]
                     ]
             }
             })
@@ -797,8 +794,8 @@
                 scrollY: {
                      
                     opacity: [
-                         [1, 500],
-                        [1, 0]
+                         [1, 'elWidth/2.5', 'elWidth*2', 'elWidth*2.5'],
+                        [1, 0, 0, 1]
                     ]
             }
             })
@@ -812,38 +809,196 @@
                 scrollY: {
                      
                     opacity: [
-                         [1, 500],
-                        [1, 0]
+                         [1, 'elWidth', 'elWidth*5', 'elWidth*5.5'],
+                        [1, 0,0,1]
                     ]
             }
             })
             
-            lax.addElements('.cascadtextleft',
+            lax.addElements('.cascadtext1',
             {
                 scrollY: {
                      
                      translateX: [
-                         [700, 2000],
-                        ['-pageWidth', 'pageWidth']
+                         ['elWidth/5', 'elWidth'],
+                         {
+                        1400:['-pageWidth', 'pageWidth'],
+                        500:['-pageWidth', 'pageWidth']
+                        }
                     ],
                     opacity: [
-                         [700, 800],
+                         ['elWidth/4', 'elWidth/2'],
                         [0, 1]
+                    ],
+                    translateY: [
+                         ['elWidth/7', 'elWidth*1.5'],
+                        {
+                        1400:['elHeight*9', '-elHeight*9'],
+                        500:['elHeight*9', '-elHeight*9']       
+                        }
                     ]
             }
             })
-            
-            lax.addElements('.cascadtextright',
+            lax.addElements('.cascadtext2',
             {
-                 scrollY: {
+                scrollY: {
                      
                      translateX: [
-                         [700, 2000],
-                        ['pageWidth', '-pageWidth']
+                         ['elWidth/2', 'elWidth*2'],
+                         {
+                        1400:['-pageWidth', 'pageWidth'],
+                        500:['-pageWidth', 'pageWidth']     
+                        }
                     ],
                     opacity: [
-                         [700, 800],
+                         ['elWidth/4', 'elWidth/2'],
                         [0, 1]
+                    ],
+                    translateY: [
+                         ['elWidth/2', 'elWidth*2'],
+                        {     
+                        1400:['-elHeight*4', 'elHeight*4'],
+                        500:['-elHeight*4', 'elHeight*4']
+                        }
+                    ]
+                    
+            }
+            })
+            lax.addElements('.cascadtext3',
+            {
+                scrollY: {
+                     
+                     translateX: [
+                         ['elWidth/4', 'elWidth*2'],
+                         {
+                        1400:['pageWidth', '-pageWidth'],
+                        500:['pageWidth', '-pageWidth']
+                         }
+                    ],
+                    opacity: [
+                         ['elWidth/4', 'elWidth/2'],
+                        [0, 1]
+                    ],
+                    translateY: [
+                         ['elWidth/4', 'elWidth*2'],
+                        {
+                        1400:['elHeight*4', '-elHeight*4'],
+                        500:['elHeight*4', '-elHeight*4']
+                        }
+                    ]
+            }
+            })
+
+              
+        }
+        };
+    </script>
+
+    <script>
+        if (window.screen.width <= 420) {
+        window.onload = function() {
+            lax.init()
+
+            // Добавить драйвер, который мы используем для управления нашими анимациями
+            lax.addDriver('scrollY', function() {
+                return window.scrollY
+            })
+
+            // Добавить привязки анимации к элементам
+            
+            lax.addElements('.bimpltitle',
+                {
+                scrollY: {
+                translateX: [
+                    [1, 'elHeight*3.4','elHeight*20', 'elHeight*25'],
+                    {
+                    500: [1,1,1,1],
+                    1400: [1, 'pageWidth/5','pageWidth/5',1]
+                    }
+                ],  
+                opacity: [
+                    [1, 'elHeight*3.4', 'elHeight*80', 'elHeight*85'],
+                    [1, 0,0,1]
+                ]
+            }            
+                            
+            })
+            
+            lax.addElements('.firstlargcont',
+                {
+                scrollY: {
+                scale: [
+                    [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
+                    [1, 1.2, 1.2, 1]
+                ]
+            }            
+                            
+            })
+            
+            
+            
+             lax.addElements('.aboutbimpanimcont',
+                {
+                scrollY: {
+                opacity: [
+                    [1, 'elHeight', 'elHeight*8', 'elHeight*10'],
+                    [1, 0, 0, 1]
+                ]
+            }            
+                            
+            })
+
+            
+            lax.addElements('.wrM',
+                {
+                scrollY: {
+                scale: [
+                    ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
+                    [1, 30, 30, 1]
+                ],
+                    translateX: [
+                    [1, 'elWidth*5', 'elWidth*43', 'elWidth*49'],
+                    {
+                    500: [1,25, 25, 1],
+                    1400:[1, 'elWidth*3.16','elWidth*3.16', 1]
+                    }
+                ],
+                    
+                    translateY: [
+                    ['elHeight*3', 'elHeight*10', 'elHeight*36', 'elHeight*38'],
+                    {
+                    500: [0,'elHeight*5', 'elHeight*5', 0],
+                    1400:[0, 'elHeight', 'elHeight', 0]
+                    }
+                ],
+                     
+                opacity: [
+                    ['elWidth*5', 'elWidth*6', 'elWidth*40','elWidth*45'],
+                    [1, 0, 0, 1]
+                ]
+            }            
+                            
+            })
+            
+            
+            lax.addElements('.spabbi',
+                {
+                scrollY: {
+                     
+                    opacity: [
+                         [1, 'elWidth', 'elWidth*13','elWidth*15'],
+                        [1, 0,0,1]
+                    ]
+            }
+            })
+            
+             lax.addElements('.navbar',
+            {
+                scrollY: {
+                     
+                    opacity: [
+                         [1, 'elWidth/2.5', 'elWidth*9', 'elWidth*10'],
+                        [1, 0, 0, 1]
                     ]
             }
             })
@@ -851,7 +1006,95 @@
             
             
             
+            
+            lax.addElements('.callbtncont',
+            {
+                scrollY: {
+                     
+                    opacity: [
+                         [1, 'elWidth', 'elWidth*15', 'elWidth*15.5'],
+                        [1, 0,0,1]
+                    ]
+            }
+            })
+            
+            lax.addElements('.cascadtext1',
+            {
+                scrollY: {
+                     
+                     translateX: [
+                         ['elWidth/2', 'elWidth*6'],
+                         {
+                        1400:['-pageWidth', 'pageWidth'],
+                        500:['-pageWidth', 'pageWidth']
+                        }
+                    ],
+                    opacity: [
+                         ['elWidth/4', 'elWidth/2'],
+                        [0, 1]
+                    ],
+                    translateY: [
+                         ['elWidth*2', 'elWidth*7'],
+                        {
+                        1400:['elHeight*9', '-elHeight*9'],
+                        500:['elHeight*9', '-elHeight*9']       
+                        }
+                    ]
+            }
+            })
+            lax.addElements('.cascadtext2',
+            {
+                scrollY: {
+                     
+                     translateX: [
+                         ['elWidth', 'elWidth*5'],
+                         {
+                        1400:['-pageWidth', 'pageWidth'],
+                        500:['-pageWidth', 'pageWidth*1.2']     
+                        }
+                    ],
+                    opacity: [
+                         ['elWidth/4', 'elWidth/2'],
+                        [0, 1]
+                    ],
+                    translateY: [
+                         ['elWidth', 'elWidth*5'],
+                        {     
+                        1400:['-elHeight*4', 'elHeight*4'],
+                        500:['-elHeight*4', 'elHeight*4']
+                        }
+                    ]
+                    
+            }
+            })
+            lax.addElements('.cascadtext3',
+            {
+                scrollY: {
+                     
+                     translateX: [
+                         ['elWidth', 'elWidth*5'],
+                         {
+                        1400:['pageWidth', '-pageWidth'],
+                        500:['pageWidth', '-pageWidth']
+                         }
+                    ],
+                    opacity: [
+                         ['elWidth/2', 'elWidth'],
+                        [0, 1]
+                    ],
+                    translateY: [
+                         ['elWidth*2', 'elWidth*6'],
+                        {
+                        1400:['elHeight*4', '-elHeight*4'],
+                        500:['elHeight*4', '-elHeight*4']
+                        }
+                    ]
+            }
+            })
+
+              
         }
+        };
     </script>
 
 
