@@ -93,6 +93,16 @@
             <div class="aboutbimplcall">
                 <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
             </div>
+            <div class="cascadtextcont">
+                 <p class="cascadtextleft">Лэндинги</p>
+                 <p class="cascadtextright">#вебстудия</p>
+                 <p class="cascadtextleft">Интернет магазины</p>
+                 <p class="cascadtextright">web desing</p>
+                 <p class="cascadtextleft">Корпоративный</p>
+                 <p class="cascadtextright">#top50</p>
+                 <p class="cascadtextleft">Иформационный</p>
+                 <p class="cascadtextright">Развитие</p>
+            </div>
         </div>
     </div>
 
@@ -807,6 +817,40 @@
                     ]
             }
             })
+            
+            lax.addElements('.cascadtextleft',
+            {
+                scrollY: {
+                     
+                     translateX: [
+                         [700, 2000],
+                        ['-pageWidth', 'pageWidth']
+                    ],
+                    opacity: [
+                         [700, 800],
+                        [0, 1]
+                    ]
+            }
+            })
+            
+            lax.addElements('.cascadtextright',
+            {
+                 scrollY: {
+                     
+                     translateX: [
+                         [700, 2000],
+                        ['pageWidth', '-pageWidth']
+                    ],
+                    opacity: [
+                         [700, 800],
+                        [0, 1]
+                    ]
+            }
+            })
+            
+            
+            
+            
         }
     </script>
 
