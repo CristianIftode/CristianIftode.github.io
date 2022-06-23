@@ -580,6 +580,29 @@ body::-webkit-scrollbar-thumb {
     margin-top: -0vh;
 }
 
+.cascadtextcont{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    top: 7vh;
+}
+
+.cascadtextleft{
+    position: relative;
+    left: -20vw;
+    opacity: 0;
+    font-size: 5vh;
+}
+
+.cascadtextright{
+    position: relative;
+    right: -20vw;
+    opacity: 0;
+    font-size: 5vh;
+}
+
+
 .callbackcont {
     display: grid;
     justify-content: center;
