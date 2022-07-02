@@ -1003,8 +1003,45 @@ body {
     z-index: 9999;
 }
 
+.canfiti{
+    position: absolute;
+    height: 7.29vw;
+    width: 7.29vw;
+    background-color: #4E44CE;
+}
 
-
+.canf1{
+   left: 1vw;
+    top:-15vh;
+}
+.canf2{
+   left: 12vw;
+    top:-15vh;
+}
+.canf3{
+   left: 23vw;
+    top:-15vh;
+}
+.canf4{
+   left: 34vw;
+    top:-15vh;
+}
+.canf5{
+   left: 45vw;
+    top:-15vh;
+}
+.canf6{
+   left: 56vw;
+    top:-15vh;
+}
+.canf7{
+   left: 67vw;
+    top:-15vh;
+}
+.canf8{
+   left: 78vw;
+    top:-15vh;
+}
 
 
 #fullpage .section .content {
