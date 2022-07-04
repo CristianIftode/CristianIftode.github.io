@@ -702,7 +702,7 @@
             var height_el = element.offset().top;
             var element_stop = $(".this");
             var height_el_stop = element_stop.offset().top;
-
+            var elementtxt = $(".cascadtextcont");
             $(".fixed_block_position").css({
                 "width": element.outerWidth(),
                 "height": element.outerHeight()
@@ -713,12 +713,13 @@
                 if (($(window).scrollTop()) > height_el_stop - element.outerHeight()) {
 
                     element.css({}).removeClass("fixed").addClass("absolute");
+                    elementtxt.addClass("cascadtextcontfx");
 
                 } else {
                     if ($(window).scrollTop() > height_el) {
 
                         element.addClass("fixed").removeClass("absolute").attr("style", "");
-
+                        
                     } else {
 
 
