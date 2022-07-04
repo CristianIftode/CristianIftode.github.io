@@ -17,42 +17,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>ТОП ВЕБ</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 </head>
 
 <body style="overflow-x: hidden">
-  
-      
-      
 
-<div class="preloader">  
-<div class="preloader-1">    
-    <svg>
-        <g>
-            <path d="M 50,100 A 1,1 0 0 1 50,0"/>
-        </g>
-        <g>
-            <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
-        </g>
-        <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style="stop-color:#BFE2FF;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#337AB7;stop-opacity:1" />
-            </linearGradient>
-        </defs>
-    </svg>
-</div>
+
+
+
+    <div class="preloader">
+        <div class="preloader-1">
+            <svg>
+                <g>
+                    <path d="M 50,100 A 1,1 0 0 1 50,0" />
+                </g>
+                <g>
+                    <path d="M 50,75 A 1,1 0 0 0 50,-25" />
+                </g>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6610f2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6f42c1;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
     </div>
- 
- <script>
-     
-     $(window).on('load', function () {
-    $('.preloader').addClass("preloader-remove");     
-});
-</script>
-  
-   
+
+    <script>
+        $(window).on('load', function() {
+            $('.preloader').addClass("preloader-remove");
+        });
+    </script>
+
+
     <div class="largecont firstlargcont fixed" id="firstlargcont">
         <div class="navbar">
             <a href="index.html">
@@ -111,10 +110,11 @@
         <div class="aboutbimplcont">
             <div class="aboutbimplsm">
                 <div class="aboutbimple">
-                    <h1 class="bimpltitle">BI</h1><span class="wrM">M</span><h1 class="bimpltitle">PLE</h1>
+                    <h1 class="bimpltitle">BI</h1><span class="wrM">M</span>
+                    <h1 class="bimpltitle">PLE</h1>
                 </div>
                 <div class="aboutbimple">
-                <span class="spabbi">C 1936 года и продолжаем это делать сладко и изящно до сих пор</span>
+                    <span class="spabbi">C 1936 года и продолжаем это делать сладко и изящно до сих пор</span>
                 </div>
                 <div class="aboutbimpanimcont">
                     <video src="img/0000-0250.mp4" id="vid" playsinline muted loop autoplay></video>
@@ -124,10 +124,15 @@
             <div class="aboutbimplcall">
                 <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
             </div>
+            <div class="skrolltextcont">
+                <p class="skrolltext">Листайсте вниз</p><img src="/img/down-arrow-svgrepo-com.svg" alt="">
+            </div>
             <div class="cascadtextcont">
-                 <p class="cascadtext1">Лэндинги</p>
-                 <p class="cascadtext2">#вебстудия</p>
-                 <div class="lax lax_preset_seesaw:140:10"><p class="cascadtext3">web desing</p></div>
+                <p class="cascadtext1">Лэндинги</p>
+                <p class="cascadtext2">#вебстудия</p>
+                <div class="lax lax_preset_seesaw:140:10">
+                    <p class="cascadtext3">web desing</p>
+                </div>
             </div>
             <div class="canfiti canf1"></div>
             <div class="canfiti canf2"></div>
@@ -283,7 +288,7 @@
             <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span></div>
         </div>
     </div>
-<script>
+    <script>
         if (window.screen.width >= 420) {
             var swiper = new Swiper(".mySwiper", {
                 direction: "vertical",
@@ -357,16 +362,6 @@
                 </div>
                 <div class="swiper-slide">
                     <div><span class="btnsledeprw">
-                           &lt;Смахните влево</span>
-                    </div>
-                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
-                    <div class="contentslide"><span class="titleslide">Telegram Bot</span>
-                        <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
-                    </div>
-
-                </div>
-                <div class="swiper-slide">
-                    <div><span class="btnsledeprw">
                             &lt;Смахните влево</span>
                     </div>
                     <div><span class="btnsledenxt">Смахните вправо-></span></div>
@@ -387,7 +382,17 @@
                 </div>
                 <div class="swiper-slide">
                     <div><span class="btnsledeprw">
-                           &lt;Смахните влево</span>
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
+                    <div class="contentslide"><span class="titleslide">Telegram Bot</span>
+                        <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
                     </div>
 
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
@@ -598,7 +603,7 @@
 -->
 
     <!--Скрипт карточек-->
-    
+
     <script>
         if (window.screen.width <= 420) {
             var swiper = new Swiper(".mySwiper", {
@@ -624,8 +629,8 @@
         if (window.screen.width >= 420) {
             let scrollObject = document.getElementById("raptx");
             window.addEventListener("scroll", () => {
-                var a = window.pageYOffset - (window.innerHeight*10);
-                scrollObject.setAttribute('startOffset', `${a - (1000)}`);
+                var a = window.pageYOffset - (window.innerHeight * 10);
+                scrollObject.setAttribute('startOffset', `${a + (window.innerHeight*3)}`);
                 var info = document.getElementById('testspan');
                 info.innerHTML = +info.innerHTML + window.pageYOffset;
             });
@@ -634,8 +639,8 @@
         if (window.screen.width <= 420) {
             let scrollObject = document.getElementById("raptx");
             window.addEventListener("scroll", () => {
-                var a = window.pageYOffset - (window.pageYOffset/100);
-                scrollObject.setAttribute('startOffset', `${a - 1000}`);
+                var a = window.pageYOffset - (window.pageYOffset/10);
+                scrollObject.setAttribute('startOffset', `${a - (window.innerHeight*6)}`);
                 var info = document.getElementById('testspan');
                 info.innerHTML = +info.innerHTML + window.pageYOffset;
             });
@@ -688,997 +693,1032 @@
     </script>
 
 
-   
-    
+
+
     <script>
         $(document).ready(function() {
 
-		var element = $(".firstlargcont");
-		var height_el = element.offset().top;
-		var element_stop = $(".this");
-		var height_el_stop = element_stop.offset().top ;
-		
-		$(".fixed_block_position").css({
-			"width": element.outerWidth(),
-			"height": element.outerHeight()
-		});
-        
-		$(window).scroll(function() {
-          
-			if(($(window).scrollTop()) > height_el_stop - element.outerHeight()) {
-				
-				element.css({
-				}).removeClass("fixed").addClass("absolute");
-			
-			} else {
-                    if($(window).scrollTop() > height_el) {
-					
-					element.addClass("fixed").removeClass("absolute").attr("style", "");
-				
-				} else {
-					
-				
-				
-				}
-				
-			}
-  
-		});
+            var element = $(".firstlargcont");
+            var height_el = element.offset().top;
+            var element_stop = $(".this");
+            var height_el_stop = element_stop.offset().top;
 
-	   });          
+            $(".fixed_block_position").css({
+                "width": element.outerWidth(),
+                "height": element.outerHeight()
+            });
+
+            $(window).scroll(function() {
+
+                if (($(window).scrollTop()) > height_el_stop - element.outerHeight()) {
+
+                    element.css({}).removeClass("fixed").addClass("absolute");
+
+                } else {
+                    if ($(window).scrollTop() > height_el) {
+
+                        element.addClass("fixed").removeClass("absolute").attr("style", "");
+
+                    } else {
+
+
+
+                    }
+
+                }
+
+            });
+
+        });
     </script>
 
     <!--    Скрипт главной анимации-->
     <script>
         if (window.screen.width >= 420) {
-        window.onload = function() {
-            lax.init()
+            window.onload = function() {
+                lax.init()
 
-            // Добавить драйвер, который мы используем для управления нашими анимациями
-            lax.addDriver('scrollY', function() {
-                return window.scrollY
-            })
+                // Добавить драйвер, который мы используем для управления нашими анимациями
+                lax.addDriver('scrollY', function() {
+                    return window.scrollY
+                })
 
-            // Добавить привязки анимации к элементам
-            
-            lax.addElements('.bimpltitle',
-                {
-                scrollY: {
-                translateX: [
-                    [1, 'elHeight*3.4','elHeight*20', 'elHeight*25'],
-                    {
-                    500: [1,1,1,1],
-                    1400: [1, 'pageWidth/5','pageWidth/5',1]
-                    }
-                ],  
-                opacity: [
-                    [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
-                    [1, 0,0,1]
-                ]
-            }            
-                            
-            })
-            
-            lax.addElements('.firstlargcont',
-                {
-                scrollY: {
-                scale: [
-                    [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
-                    [1, 1.2, 1.2, 1]
-                ]
-            }            
-                            
-            })
-            
-            
-            
-             lax.addElements('.aboutbimpanimcont',
-                {
-                scrollY: {
-                opacity: [
-                    [1, 'elHeight', 'elHeight*5', 'elHeight*7'],
-                    [1, 0, 0, 1]
-                ]
-            }            
-                            
-            })
+                // Добавить привязки анимации к элементам
 
-            
-            lax.addElements('.wrM',
-                {
-                scrollY: {
-                scale: [
-                    ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
-                    [1, 30, 30, 1]
-                ],
-                    translateX: [
-                    [1, 'elWidth*5', 'elWidth*23', 'elWidth*29'],
-                    {
-                    500: [1,25, 25, 1],
-                    1400:[1, 'elWidth*3.16','elWidth*3.16', 1]
+                lax.addElements('.bimpltitle', {
+                    scrollY: {
+                        translateX: [
+                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            {
+                                500: [1, 1, 1, 1],
+                                1400: [1, 'pageWidth/5', 'pageWidth/5', 1]
+                            }
+                        ],
+                        opacity: [
+                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            [1, 0, 0, 1]
+                        ]
                     }
-                ],
-                    
-                    translateY: [
-                    [500, 'elHeight*5', 'elHeight*16', 'elHeight*18'],
-                    {
-                    500: [0,'elHeight*20', 'elHeight*20', 0],
-                    1400:[0, 'elHeight', 'elHeight', 0]
-                    }
-                ],
-                     
-                opacity: [
-                    ['elWidth*5', 'elWidth*6', 'elWidth*20','elWidth*25'],
-                    [1, 0, 0, 1]
-                ]
-            }            
-                            
-            })
-            
-            
-            lax.addElements('.spabbi',
-                {
-                scrollY: {
-                     
-                    opacity: [
-                         [1, 'elWidth', 'elWidth*6','elWidth*6.5'],
-                        [1, 0,0,1]
-                    ]
-            }
-            })
-            
-             lax.addElements('.navbar',
-            {
-                scrollY: {
-                     
-                    opacity: [
-                         [1, 'elWidth/2.5', 'elWidth*2', 'elWidth*2.5'],
-                        [0, 0, 0, 1]
-                    ]
-            }
-            })
-            
-            
-            
-            
-            
-            lax.addElements('.callbtncont',
-            {
-                scrollY: {
-                     
-                    opacity: [
-                         [1, 'elWidth', 'elWidth*5', 'elWidth*5.5'],
-                        [0, 0,0,1]
-                    ]
-            }
-            })
-            
-            lax.addElements('.cascadtext1',
-            {
-                scrollY: {
-                     
-                     translateX: [
-                         ['elWidth/5', 'elWidth'],
-                         {
-                        1400:['-pageWidth', 'pageWidth'],
-                        500:['-pageWidth', 'pageWidth']
-                        }
-                    ],
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2'],
-                        [0, 1]
-                    ],
-                    translateY: [
-                         ['elWidth/7', 'elWidth*1.5'],
-                        {
-                        1400:['elHeight*9', '-elHeight*9'],
-                        500:['elHeight*9', '-elHeight*9']       
-                        }
-                    ]
-            }
-            })
-            lax.addElements('.cascadtext2',
-            {
-                scrollY: {
-                     
-                     translateX: [
-                         ['elWidth/2', 'elWidth*2'],
-                         {
-                        1400:['-pageWidth', 'pageWidth'],
-                        500:['-pageWidth', 'pageWidth']     
-                        }
-                    ],
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2'],
-                        [0, 1]
-                    ],
-                    translateY: [
-                         ['elWidth/2', 'elWidth*2'],
-                        {     
-                        1400:['-elHeight*4', 'elHeight*4'],
-                        500:['-elHeight*4', 'elHeight*4']
-                        }
-                    ]
-                    
-            }
-            })
-            lax.addElements('.cascadtext3',
-            {
-                scrollY: {
-                     
-                     translateX: [
-                         ['elWidth/4', 'elWidth*2'],
-                         {
-                        1400:['pageWidth', '-pageWidth'],
-                        500:['pageWidth', '-pageWidth']
-                         }
-                    ],
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2'],
-                        [0, 1]
-                    ],
-                    translateY: [
-                         ['elWidth/4', 'elWidth*2'],
-                        {
-                        1400:['elHeight*4', '-elHeight*4'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ]
-            }
-            })
-            
-            
-            
-            lax.addElements('.canf1',
-            {
-                scrollY: {
-                     
-                    
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*15'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*9']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*5']
-                    }
-                    ]
-                    
-                    
-            }
-            })
-            
-            
-            
-            lax.addElements('.canf2',
-            {
-                scrollY: {
-                     
-                   opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*10'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*10']
-                    }
-                    ]
-            }
-            })
-            
-            
-            lax.addElements('.canf3',
-            {
-                scrollY: {
-                     
-                      opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*20'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ]
-            }
-            })
-            
-            
-            lax.addElements('.canf4',
-            {
-                scrollY: {
-                     
-                      opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*9'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*25']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ]
-            }
-            })
-            
-            
-            lax.addElements('.canf5',
-            {
-                scrollY: {
-                     
-                      opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*13'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*15']
-                    }
-                    ]
-            }
-            })
-            
-            
-            lax.addElements('.canf6',
-            {
-                scrollY: {
-                     
-                     opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*23'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*13']
-                    }
-                    ]
-            }
-            })
-            
-            
-            lax.addElements('.canf7',
-            {
-                scrollY: {
-                     
-                       
-                     opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*18'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*9']
-                    }
-                    ]
-            }
-            })
-            
-            
-            lax.addElements('.canf8',
-            {
-                scrollY: {
-                     
-                     
-                     opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
-                        [0, 1, 1 , 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*9'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*7']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*15'],
-                    {
-                    1400:['-elWidth', 'elHeight*22']
-                    }
-                    ]
-            }
-            })
-            
-            
-            
-            
 
-              
-        }
+                })
+
+                lax.addElements('.firstlargcont', {
+                    scrollY: {
+                        scale: [
+                            [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
+                            [1, 1.2, 1.2, 1]
+                        ]
+                    }
+
+                })
+
+
+
+                lax.addElements('.aboutbimpanimcont', {
+                    scrollY: {
+                        opacity: [
+                            [1, 'elHeight', 'elHeight*7', 'elHeight*9'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.wrM', {
+                    scrollY: {
+                        scale: [
+                            ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
+                            [1, 30, 30, 1]
+                        ],
+                        translateX: [
+                            [1, 'elWidth*5', 'elWidth*23', 'elWidth*29'],
+                            {
+                                500: [1, 25, 25, 1],
+                                1400: [1, 'elWidth*3.16', 'elWidth*3.16', 1]
+                            }
+                        ],
+
+                        translateY: [
+                            [500, 'elHeight*5', 'elHeight*16', 'elHeight*18'],
+                            {
+                                500: [0, 'elHeight*20', 'elHeight*20', 0],
+                                1400: [0, 'elHeight', 'elHeight', 0]
+                            }
+                        ],
+
+                        opacity: [
+                            ['elWidth*5', 'elWidth*6', 'elWidth*20', 'elWidth*25'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.spabbi', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*6', 'elWidth*6.5'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.navtarget', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth/2.5', 'elWidth*5', 'elWidth*5.5'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.logo', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth*5', 'elWidth*30', 'elWidth*35'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+
+
+                lax.addElements('.lng', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth*5', 'elWidth*30', 'elWidth*35'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.callbtncont', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*5', 'elWidth*5.5'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.cascadtext1', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/5', 'elWidth'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth/7', 'elWidth*1.5'],
+                            {
+                                1400: ['elHeight*9', '-elHeight*9'],
+                                500: ['elHeight*9', '-elHeight*9']
+                            }
+                        ]
+                    }
+                })
+                lax.addElements('.cascadtext2', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/2', 'elWidth*2'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth/2', 'elWidth*2'],
+                            {
+                                1400: ['-elHeight*4', 'elHeight*4'],
+                                500: ['-elHeight*4', 'elHeight*4']
+                            }
+                        ]
+
+                    }
+                })
+                lax.addElements('.cascadtext3', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/4', 'elWidth*2'],
+                            {
+                                1400: ['pageWidth', '-pageWidth'],
+                                500: ['pageWidth', '-pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth/4', 'elWidth*2'],
+                            {
+                                1400: ['elHeight*4', '-elHeight*4'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ]
+                    }
+                })
+
+
+
+                lax.addElements('.canf1', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*9']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*5']
+                            }
+                        ]
+
+
+                    }
+                })
+
+
+
+                lax.addElements('.canf2', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*10'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*10']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf3', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*20'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf4', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*9'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*25']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf5', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*13'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*15']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf6', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*23'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*13']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf7', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*18'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf8', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*9'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*22']
+                            }
+                        ]
+                    }
+                })
+
+
+
+
+
+                lax.addElements('.skrolltextcont', {
+                    scrollY: {
+
+
+                        translateY: [
+                            ['elWidth', 'elWidth*9', 'elWidth*25', 'elWidth*28'],
+                            {
+                                1400: [0, '-elHeight', '-elHeight', 0],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ]
+                    }
+                })
+
+
+
+            }
         };
     </script>
 
     <script>
         if (window.screen.width <= 420) {
-        window.onload = function() {
-            lax.init()
+            window.onload = function() {
+                lax.init()
 
-            // Добавить драйвер, который мы используем для управления нашими анимациями
-            lax.addDriver('scrollY', function() {
-                return window.scrollY
-            })
+                // Добавить драйвер, который мы используем для управления нашими анимациями
+                lax.addDriver('scrollY', function() {
+                    return window.scrollY
+                })
 
-            // Добавить привязки анимации к элементам
-            
-            lax.addElements('.bimpltitle',
-                {
-                scrollY: {
-                translateX: [
-                    [1, 'elHeight*3.4','elHeight*20', 'elHeight*25'],
-                    {
-                    500: [1,1,1,1],
-                    1400: [1, 'pageWidth/5','pageWidth/5',1]
-                    }
-                ],  
-                opacity: [
-                    [1, 'elHeight*3.4', 'elHeight*80', 'elHeight*85'],
-                    [1, 0,0,1]
-                ]
-            }            
-                            
-            })
-            
-            lax.addElements('.firstlargcont',
-                {
-                scrollY: {
-                scale: [
-                    [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
-                    [1, 1.2, 1.2, 1]
-                ]
-            }            
-                            
-            })
-            
-            
-            
-             lax.addElements('.aboutbimpanimcont',
-                {
-                scrollY: {
-                opacity: [
-                    [1, 'elHeight', 'elHeight*8', 'elHeight*10'],
-                    [1, 0, 0, 1]
-                ]
-            }            
-                            
-            })
+                // Добавить привязки анимации к элементам
 
-            
-            lax.addElements('.wrM',
-                {
-                scrollY: {
-                scale: [
-                    ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
-                    [1, 30, 30, 1]
-                ],
-                    translateX: [
-                    [1, 'elWidth*5', 'elWidth*43', 'elWidth*49'],
-                    {
-                    500: [1,25, 25, 1],
-                    1400:[1, 'elWidth*3.16','elWidth*3.16', 1]
+                lax.addElements('.bimpltitle', {
+                    scrollY: {
+                        translateX: [
+                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            {
+                                500: [1, 1, 1, 1],
+                                1400: [1, 'pageWidth/5', 'pageWidth/5', 1]
+                            }
+                        ],
+                        opacity: [
+                            [1, 'elHeight*3.4', 'elHeight*80', 'elHeight*85'],
+                            [1, 0, 0, 1]
+                        ]
                     }
-                ],
-                    
-                    translateY: [
-                    ['elHeight*3', 'elHeight*10', 'elHeight*36', 'elHeight*38'],
-                    {
-                    500: [0,'elHeight*5', 'elHeight*5', 0],
-                    1400:[0, 'elHeight', 'elHeight', 0]
-                    }
-                ],
-                     
-                opacity: [
-                    ['elWidth*5', 'elWidth*6', 'elWidth*40','elWidth*45'],
-                    [1, 0, 0, 1]
-                ]
-            }            
-                            
-            })
-            
-            
-            lax.addElements('.spabbi',
-                {
-                scrollY: {
-                     
-                    opacity: [
-                         [1, 'elWidth', 'elWidth*13','elWidth*15'],
-                        [1, 0,0,1]
-                    ]
-            }
-            })
-            
-             lax.addElements('.navbar',
-            {
-                scrollY: {
-                     
-                    opacity: [
-                         [1, 'elWidth/2.5', 'elWidth*9', 'elWidth*10'],
-                        [0, 0, 0, 1]
-                    ]
-            }
-            })
-            
-            
-            
-            
-            
-            lax.addElements('.callbtncont',
-            {
-                scrollY: {
-                     
-                    opacity: [
-                         [1, 'elWidth', 'elWidth*15', 'elWidth*15.5'],
-                        [0, 0,0,1]
-                    ]
-            }
-            })
-            
-            lax.addElements('.cascadtext1',
-            {
-                scrollY: {
-                     
-                     translateX: [
-                         ['elWidth/2', 'elWidth*6'],
-                         {
-                        1400:['-pageWidth', 'pageWidth'],
-                        500:['-pageWidth', 'pageWidth']
-                        }
-                    ],
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2'],
-                        [0, 1]
-                    ],
-                    translateY: [
-                         ['elWidth*2', 'elWidth*7'],
-                        {
-                        1400:['elHeight*9', '-elHeight*9'],
-                        500:['elHeight*9', '-elHeight*9']       
-                        }
-                    ]
-            }
-            })
-            lax.addElements('.cascadtext2',
-            {
-                scrollY: {
-                     
-                     translateX: [
-                         ['elWidth', 'elWidth*5'],
-                         {
-                        1400:['-pageWidth', 'pageWidth'],
-                        500:['-pageWidth', 'pageWidth*1.2']     
-                        }
-                    ],
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2'],
-                        [0, 1]
-                    ],
-                    translateY: [
-                         ['elWidth', 'elWidth*5'],
-                        {     
-                        1400:['-elHeight*4', 'elHeight*4'],
-                        500:['-elHeight*4', 'elHeight*4']
-                        }
-                    ]
-                    
-            }
-            })
-            lax.addElements('.cascadtext3',
-            {
-                scrollY: {
-                     
-                     translateX: [
-                         ['elWidth', 'elWidth*5'],
-                         {
-                        1400:['pageWidth', '-pageWidth'],
-                        500:['pageWidth', '-pageWidth']
-                         }
-                    ],
-                    opacity: [
-                         ['elWidth/2', 'elWidth'],
-                        [0, 1]
-                    ],
-                    translateY: [
-                         ['elWidth*2', 'elWidth*6'],
-                        {
-                        1400:['elHeight*4', '-elHeight*4'],
-                        500:['elHeight*4', '-elHeight*4']
-                        }
-                    ]
-            }
-            })
 
-            
-                  
-            lax.addElements('.canf1',
-            {
-                scrollY: {
-                     
-                    
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*35']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
+                })
+
+                lax.addElements('.firstlargcont', {
+                    scrollY: {
+                        scale: [
+                            [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
+                            [1, 1.2, 1.2, 1]
+                        ]
                     }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*27']
+
+                })
+
+
+
+                lax.addElements('.aboutbimpanimcont', {
+                    scrollY: {
+                        opacity: [
+                            [1, 'elHeight', 'elHeight*8', 'elHeight*10'],
+                            [0, 0, 0, 1]
+                        ]
                     }
-                    ]
-                    
-                    
+
+                })
+
+
+                lax.addElements('.wrM', {
+                    scrollY: {
+                        scale: [
+                            ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
+                            [1, 30, 30, 1]
+                        ],
+                        translateX: [
+                            [1, 'elWidth*5', 'elWidth*43', 'elWidth*49'],
+                            {
+                                500: [1, 25, 25, 1],
+                                1400: [1, 'elWidth*3.16', 'elWidth*3.16', 1]
+                            }
+                        ],
+
+                        translateY: [
+                            ['elHeight*3', 'elHeight*10', 'elHeight*36', 'elHeight*38'],
+                            {
+                                500: [0, 'elHeight*5', 'elHeight*5', 0],
+                                1400: [0, 'elHeight', 'elHeight', 0]
+                            }
+                        ],
+
+                        opacity: [
+                            ['elWidth*5', 'elWidth*6', 'elWidth*40', 'elWidth*45'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.spabbi', {
+                    scrollY: {
+                        translateY: [
+                            [0, 'elHeight*10', 'elHeight*36', 'elHeight*38'],
+                            {
+                                500: ['-pageHeight/14', 'elHeight*5', 'elHeight*5', 0]
+                            }
+                        ],
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*13', 'elWidth*13'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.navtarget', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth/2.5', 'elWidth*12', 'elWidth*14'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.logo', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth*10', 'elWidth*36', 'elWidth*39'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+
+                lax.addElements('.menu-triger', {
+                    scrollY: {
+
+                        opacity: [
+                            [0, 'elWidth*10', 'elWidth*86', 'elWidth*89'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.callbtncont', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*15', 'elWidth*15'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.cascadtext1', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/2', 'elWidth*6'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth*2', 'elWidth*7'],
+                            {
+                                1400: ['elHeight*9', '-elHeight*9'],
+                                500: ['elHeight*9', '-elHeight*9']
+                            }
+                        ]
+                    }
+                })
+                lax.addElements('.cascadtext2', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth', 'elWidth*5'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth*1.2']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth', 'elWidth*5'],
+                            {
+                                1400: ['-elHeight*4', 'elHeight*4'],
+                                500: ['-elHeight*4', 'elHeight*4']
+                            }
+                        ]
+
+                    }
+                })
+                lax.addElements('.cascadtext3', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth', 'elWidth*5'],
+                            {
+                                1400: ['pageWidth', '-pageWidth'],
+                                500: ['pageWidth', '-pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/2', 'elWidth'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth*2', 'elWidth*6'],
+                            {
+                                1400: ['elHeight*4', '-elHeight*4'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ]
+                    }
+                })
+
+
+
+                lax.addElements('.canf1', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*35']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*27']
+                            }
+                        ]
+
+
+                    }
+                })
+
+
+
+                lax.addElements('.canf2', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*45']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*35']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf3', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*30']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*40']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf4', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*55']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf5', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*26']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*28']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf6', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*43']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*43']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf7', {
+                    scrollY: {
+
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*52']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf8', {
+                    scrollY: {
+
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*36']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*44']
+                            }
+                        ]
+
+                    }
+                })
+
+
+
+                lax.addElements('.skrolltextcont', {
+                    scrollY: {
+
+
+                        translateY: [
+                            ['elWidth', 'elWidth*9', 'elWidth*22', 'elWidth*24'],
+                            {
+                                500: [0, '-elHeight*1.3', '-elHeight*1.3', 0]
+                            }
+                        ]
+                    }
+                })
+
+
+
             }
-            })
-            
-            
-            
-            lax.addElements('.canf2',
-            {
-                scrollY: {
-                     
-                    
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*45']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*35']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            lax.addElements('.canf3',
-            {
-                scrollY: {
-                     
-                     
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*30']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*40']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            lax.addElements('.canf4',
-            {
-                scrollY: {
-                     
-                    
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*55']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            lax.addElements('.canf5',
-            {
-                scrollY: {
-                     
-                   
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*26']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*28']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            lax.addElements('.canf6',
-            {
-                scrollY: {
-                     
-                
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*43']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*43']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            lax.addElements('.canf7',
-            {
-                scrollY: {
-                     
-                       
-                     
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*47']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*52']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            lax.addElements('.canf8',
-            {
-                scrollY: {
-                     
-                     
-                   
-                    opacity: [
-                         ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
-                        [0, 1, 1, 0]
-                    ],
-                    translateY: [
-                         ['elWidth*6', 'elWidth*65'],
-                        {
-                        1400:['-elWidth', 'elHeight*9'],
-                        500:['-elWidth', 'elHeight*36']
-                        }
-                    ],
-                    
-                    rotateX:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*47']
-                    }
-                    ],
-                     rotateY:[ 
-                        ['elWidth', 'elWidth*65'],
-                    {
-                    500:['-elWidth', 'elHeight*44']
-                    }
-                    ]
-                    
-            }
-            })
-            
-            
-            
-            
-              
-        }
         };
     </script>
 
