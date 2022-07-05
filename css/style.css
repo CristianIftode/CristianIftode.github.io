@@ -225,14 +225,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bimpltitle {
-    font-family: 'RalewayBlack';
+   font-family: 'RalewayBlack';
     font-style: normal;
     font-weight: 900;
     font-size: 8vw;
-    line-height: 7.813vw;
-    margin-top: 6.354vh;
+    line-height: 25vw;
+    margin-top: 0;
     position: relative;
     z-index: 2;
+    margin-bottom: 0;
 }
 
 
@@ -304,7 +305,7 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
     font-weight: 900;
     width: 5.89vw;
-    margin-top: 3.8vh;
+    margin-top: 0;
     display: inline-block;
 }
 
@@ -1487,7 +1488,7 @@ body {
     }
 
     .aboutbimple .wrM {
-        position: inherit;
+      position: inherit;
     width: auto;
     top: 0;
     left: 0;
@@ -1496,9 +1497,10 @@ body {
     font-style: normal;
     font-weight: 900;
     /* line-height: 7.813vw; */
-    margin-top: 5.454vh;
+    margin-top: 0;
     display: inline-block;
-    width: 12.2vw;
+    width: 12.4vw;
+    height: 25vw;
     }
 
 
