@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb {
 
 .largecont:nth-of-type(2n) {
     padding: 2.302vw 2.865vw;
-    margin: 11.1vh 6.406vw 1.042vw 6.406vw;
+    margin: 2vh 6.406vw 1.042vw 6.406vw;
     background-color: #e6e6e6;
     border-radius: 2.604vw;
     -webkit-box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
