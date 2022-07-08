@@ -101,13 +101,15 @@ body::-webkit-scrollbar-thumb {
 
 .largecont:nth-of-type(2n) {
     padding: 2.302vw 2.865vw;
-    margin: 1vw 6.406vw 1.042vw 6.406vw;
+    margin: 11.1vh 6.406vw 1.042vw 6.406vw;
     background-color: #e6e6e6;
     border-radius: 2.604vw;
     -webkit-box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
             box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.2);
 }
-
+.my-5{
+    margin-top: 0rem!important;
+}
 
 .skrolltextcont {
 
@@ -229,7 +231,7 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
     font-weight: 900;
     font-size: 8vw;
-    line-height: 25vw;
+    line-height: 16vw;
     margin-top: 0;
     position: relative;
     z-index: 2;
@@ -260,7 +262,7 @@ body::-webkit-scrollbar-thumb {
     -ms-grid-columns: 33.281vw auto;
     grid-template-columns: 33.281vw auto;
     margin-left: 7.396vw;
-    margin-top: 33vh;
+    margin-top: 12vh;
 }
 
 #nav-icon7 {
@@ -689,7 +691,7 @@ body::-webkit-scrollbar-thumb {
     -ms-grid-columns: 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw 4.167vw 3.333vw;
     grid-template-columns: repeat(9, 3.333vw);
     gap: 0px 4.167vw;
-    margin-top: 8vh;
+    margin-top: 5.1vh;
 
     -webkit-box-pack: center;
 
@@ -1503,6 +1505,18 @@ body {
     height: 25vw;
     }
 
+    
+    .bimpltitle {
+    font-family: 'RalewayBlack';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 8vw;
+    line-height: 25vw;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+}
 
     .callbtnflpg {
         display: -ms-inline-grid;
