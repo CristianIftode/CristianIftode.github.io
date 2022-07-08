@@ -696,6 +696,7 @@
 
 
     <script>
+         if (window.screen.width >= 420) {
         $(document).ready(function() {
 
             var element = $(".firstlargcont");
@@ -710,7 +711,7 @@
 
             $(window).scroll(function() {
 
-                if (($(window).scrollTop()) > height_el_stop - element.outerHeight()) {
+                if (($(window).scrollTop() +8) > height_el_stop - element.outerHeight()) {
 
                     element.css({}).removeClass("fixed").addClass("absolute");
                     elementtxt.addClass("cascadtextcontfx");
@@ -730,7 +731,43 @@
 
             });
 
-        });
+        });}
+         if (window.screen.width <= 420) {
+        $(document).ready(function() {
+
+            var element = $(".firstlargcont");
+            var height_el = element.offset().top;
+            var element_stop = $(".this");
+            var height_el_stop = element_stop.offset().top;
+            var elementtxt = $(".cascadtextcont");
+            $(".fixed_block_position").css({
+                "width": element.outerWidth(),
+                "height": element.outerHeight()
+            });
+
+            $(window).scroll(function() {
+
+                if (($(window).scrollTop() +50) > height_el_stop - element.outerHeight()) {
+
+                    element.css({}).removeClass("fixed").addClass("absolute");
+                    elementtxt.addClass("cascadtextcontfx");
+
+                } else {
+                    if ($(window).scrollTop() > height_el) {
+
+                        element.addClass("fixed").removeClass("absolute").attr("style", "");
+                        
+                    } else {
+
+
+
+                    }
+
+                }
+
+            });
+
+        });}
     </script>
 
     <!--    Скрипт главной анимации-->
@@ -749,14 +786,14 @@
                 lax.addElements('.bimpltitle', {
                     scrollY: {
                         translateX: [
-                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            [1, 'elHeight*3.4', 'elHeight*11', 'elHeight*13'],
                             {
                                 500: [1, 1, 1, 1],
                                 1400: [1, 'pageWidth/5', 'pageWidth/5', 1]
                             }
                         ],
                         opacity: [
-                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            [1, 'elHeight*3.4', 'elHeight*11', 'elHeight*13'],
                             [1, 0, 0, 1]
                         ]
                     }
@@ -778,7 +815,7 @@
                 lax.addElements('.aboutbimpanimcont', {
                     scrollY: {
                         opacity: [
-                            [1, 'elHeight', 'elHeight*7', 'elHeight*9'],
+                            [1, 'elHeight', 'elHeight*8', 'elHeight*10'],
                             [1, 0, 0, 1]
                         ]
                     }
@@ -801,7 +838,7 @@
                         ],
 
                         translateY: [
-                            [500, 'elHeight*5', 'elHeight*16', 'elHeight*18'],
+                            [500, 'elHeight*5', 'elHeight*8', 'elHeight*10'],
                             {
                                 500: [0, 'elHeight*20', 'elHeight*20', 0],
                                 1400: [0, 'elHeight', 'elHeight', 0]
@@ -809,7 +846,7 @@
                         ],
 
                         opacity: [
-                            ['elWidth*5', 'elWidth*6', 'elWidth*20', 'elWidth*25'],
+                            ['elWidth*5', 'elWidth*6', 'elWidth*30', 'elWidth*35'],
                             [1, 0, 0, 1]
                         ]
                     }
@@ -1206,11 +1243,15 @@
 
 
                         translateY: [
-                            ['elWidth', 'elWidth*9', 'elWidth*25', 'elWidth*28'],
+                            ['elWidth', 'elWidth*9', 'elWidth*20', 'elWidth*22'],
                             {
                                 1400: [0, '-elHeight', '-elHeight', 0],
                                 500: ['elHeight*4', '-elHeight*4']
                             }
+                        ],
+                        opacity: [
+                            [0, 'elWidth', 'elWidth*17', 'elWidth*19'],
+                            [1, 0, 0, 0]
                         ]
                     }
                 })
@@ -1243,7 +1284,7 @@
                             }
                         ],
                         opacity: [
-                            [1, 'elHeight*3.4', 'elHeight*80', 'elHeight*85'],
+                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
                             [1, 0, 0, 1]
                         ]
                     }
@@ -1288,15 +1329,15 @@
                         ],
 
                         translateY: [
-                            ['elHeight*3', 'elHeight*10', 'elHeight*36', 'elHeight*38'],
+                            ['elHeight', 'elHeight*4', 'elHeight*20', 'elHeight*22'],
                             {
-                                500: [0, 'elHeight*5', 'elHeight*5', 0],
+                                500: [0, 'elHeight*4', 'elHeight*4', 0],
                                 1400: [0, 'elHeight', 'elHeight', 0]
                             }
                         ],
 
                         opacity: [
-                            ['elWidth*5', 'elWidth*6', 'elWidth*40', 'elWidth*45'],
+                            ['elWidth*5', 'elWidth*6', 'elWidth*42', 'elWidth*45'],
                             [1, 0, 0, 1]
                         ]
                     }
@@ -1313,7 +1354,7 @@
                             }
                         ],
                         opacity: [
-                            [1, 'elWidth', 'elWidth*13', 'elWidth*13'],
+                            [1, 'elWidth', 'elWidth*13', 'elWidth*15'],
                             [1, 0, 0, 1]
                         ]
                     }
@@ -1356,7 +1397,7 @@
                     scrollY: {
 
                         opacity: [
-                            [1, 'elWidth', 'elWidth*15', 'elWidth*15'],
+                            [1, 'elWidth', 'elWidth*14', 'elWidth*16'],
                             [0, 0, 0, 1]
                         ]
                     }
@@ -1713,6 +1754,10 @@
                             {
                                 500: [0, '-elHeight*1.3', '-elHeight*1.3', 0]
                             }
+                        ],
+                         opacity: [
+                            [0, 'elWidth', 'elWidth*17', 'elWidth*19'],
+                            [1, 0, 0, 0]
                         ]
                     }
                 })
