@@ -2642,5 +2642,10 @@ body {
             top: 87vh;
         }
     }
+    
+    .forfp{
+        position: absolute;
+        bottom: 0;
+    }
 
 }
