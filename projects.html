@@ -266,7 +266,9 @@
 		scrollHorizontally: true,
         lazyLoading: false,
         afterLoad: function() {
-            $.fn.fullpage.reBuild(); 
+            setTimeout(function(){
+            fullpage_api.reBuild(); 
+            }, 500);
         }        
         
 	});
