@@ -264,10 +264,9 @@
 		//options here
         css3: true,
         
-        afterLoad: setTimeout(function() {
+        afterLoad: function() {
             $('.section').css('height', window.innerHeight + 'px');
-            $(window).scrollTop(0);
-        }, 10),
+        },
        
 	});
         
