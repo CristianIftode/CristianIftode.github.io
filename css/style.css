@@ -2465,7 +2465,8 @@ body {
         height: 100vh;
         background-size: cover !important;
         background-position-x: right !important;
-        width: 100vw;
+        width: 99.5vw;
+        margin-left: 0.1vw;
     }
 
     #fullpage .section .mocupbackgr {
@@ -2474,6 +2475,7 @@ body {
             width: 65vw;
             margin-left: -54vw;
             height: 100vh;
+            margin-left: -54.1vw;
     }
 
     #fullpage .section .colo {
@@ -2500,7 +2502,6 @@ body {
 
     #fullpage .section .content {
         position: absolute;
-        padding: 2vw;
         width: 100vw;
         height: 100vh;
     }
@@ -2524,7 +2525,8 @@ body {
         height: 100vh;
         right: 0vw;
         background-position-x: left !important;
-        width: 100vw !important;
+        width: 99.5vw !important;
+        margin-right: 0.1374vw;
     }
 
     #fullpage .section:nth-of-type(2n) .colorbackg .logo {
@@ -2533,11 +2535,11 @@ body {
     }
 
     #fullpage .section:nth-of-type(2n) .mocupbackgr {
-        z-index: -1;
-        left: 0vw;
+      
         height: 100vh;
-        width: 60vw;
+        width: 59vw;
         margin-right: -48vw;
+        margin-left: 0.1vw;
     }
 
     #fullpage .section:nth-of-type(2n) .colo {
