@@ -264,10 +264,13 @@
 		//options here
 		autoScrolling:true,
 		scrollHorizontally: true,
-        lazyLoading: false,  
-        afterLoad: function(){
-        fullpage_api.reBuild(); 
-        };
+        lazyLoading: false,
+        afterLoad: function() {
+            $.fn.fullpage.reBuild(); 
+        }        
+        
+	});
+        
            
         });
         
