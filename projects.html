@@ -258,7 +258,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
-     <script>
+    <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
 		//options here
@@ -266,9 +266,7 @@
 		scrollHorizontally: true,
         lazyLoading: false,
         afterLoad: function() {
-            setTimeout(function(){
-            fullpage_api.reBuild(); 
-            }, 500);
+            fullpage_api.reBuild();   
         }        
         
 	});
