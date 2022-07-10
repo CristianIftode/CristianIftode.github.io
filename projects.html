@@ -264,7 +264,10 @@
 		//options here
 		autoScrolling:true,
 		scrollHorizontally: true,
-        lazyLoading: false
+        lazyLoading: false,  
+        afterLoad: function(){
+        fullpage_api.reBuild(); 
+    }, 500);
 	});
         
            
