@@ -17,12 +17,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>ТОП ВЕБ</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 </head>
 
-<body>
-    <div class="largecont firstlargcont" id="firstlargcont">
+<body style="overflow-x: hidden">
+
+
+
+
+    <div class="preloader">
+        <div class="preloader-1">
+            <svg>
+                <g>
+                    <path d="M 50,100 A 1,1 0 0 1 50,0" />
+                </g>
+                <g>
+                    <path d="M 50,75 A 1,1 0 0 0 50,-25" />
+                </g>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6610f2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6f42c1;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        $(window).on('load', function() {
+            $('.preloader').addClass("preloader-remove");
+        });
+    </script>
+
+
+    <div class="largecont firstlargcont fixed" id="firstlargcont">
         <div class="navbar">
-            <a href="index.html"><div class="logo"><img alt="" src="img/logo.svg"></div></a>
+            <a href="index.html">
+                <div class="logo"><img alt="" src="img/logo.svg"></div>
+            </a>
             <div class="navtarget">
                 <ul>
                     <a href="index.html">
@@ -42,35 +76,14 @@
             <div class="menu-triger" id="nav-icon7">
                 <span></span>
             </div>
-            
-         
+
+
             <div class="lng">
                 <span><a href="#">RU</a>/<a href="#">ENG</a></span>
                 <span id="testspan">0</span>
             </div>
         </div>
-        
-       
-        
-        
-        
-        <div class="aboutbimplcont">
-            <div class="aboutbimplsm">
-                <div class="aboutbimple">
-                    <h1 class="bimpltitle">BIMPLE</h1><br><br><br><span>C 1936 года и продолжаем это делать сладко и изящно до сих пор</span>
-                </div>
-                <div class="aboutbimpanimcont">
-                    <video src="img/0000-0250.mp4" id="vid" playsinline muted loop autoplay></video>
-                </div>
-
-            </div>
-            <div class="aboutbimplcall">
-                <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
-            </div>
-        </div>
-    </div>
-    
-     <div class="navbarmob menu-popup">
+        <div class="navbarmob menu-popup">
             <div class="navtargetmob">
                 <ul>
                     <a href="index.html">
@@ -87,12 +100,55 @@
                     </a>
                 </ul>
             </div>
-     
+
         </div>
+
+
+
+
+
+        <div class="aboutbimplcont">
+            <div class="aboutbimplsm">
+                <div class="aboutbimple">
+                    <h1 class="bimpltitle">BI</h1><img class="wrM" src="/img/M.svg" alt="">
+                    <h1 class="bimpltitle">PLE</h1>
+                </div>
+                <div class="aboutbimple">
+                    <span class="spabbi">C 1936 года и продолжаем это делать сладко и изящно до сих пор</span>
+                </div>
+                <div class="aboutbimpanimcont">
+                    <video src="img/0000-0250.mp4" id="vid" playsinline muted loop autoplay></video>
+                </div>
+
+            </div>
+            <div class="aboutbimplcall">
+                <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
+            </div>
+            <div class="skrolltextcont">
+                <p class="skrolltext">Листайсте вниз</p><img src="/img/down-arrow-svgrepo-com.svg" alt="">
+            </div>
+            <div class="cascadtextcont">
+                <p class="cascadtext1">Лэндинги</p>
+                <p class="cascadtext2">#вебстудия</p>
+                <div class="lax lax_preset_seesaw:140:10">
+                    <p class="cascadtext3">web desing</p>
+                </div>
+            </div>
+            <div class="canfiti canf1"></div>
+            <div class="canfiti canf2"></div>
+            <div class="canfiti canf3"></div>
+            <div class="canfiti canf4"></div>
+            <div class="canfiti canf5"></div>
+            <div class="canfiti canf6"></div>
+            <div class="canfiti canf7"></div>
+            <div class="canfiti canf8"></div>
+        </div>
+    </div>
+
 
     <div class="smallcont this" id="nas">
         <div class="bigtite">
-            <h1 class="bigtite">Наши преимущества</h1>
+            <h1 class="bigtite">НАШИ ПРЕИМУЩЕСТВА</h1>
         </div>
 
         <div class="cardsaboutcont">
@@ -182,6 +238,7 @@
                     <div class="imgslidcont"><img src="img/mockupprew.png" alt="" class="slideimg"></div>
                 </div>
                 <div class="firstslide slidecont swiper-slide">
+
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
@@ -228,10 +285,9 @@
                     <div class="imgslidcont"><img src="img/mockupprew.png" alt="" class="slideimg"></div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span></div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         if (window.screen.width >= 420) {
             var swiper = new Swiper(".mySwiper", {
@@ -250,6 +306,7 @@
 
 
 
+
     <div class="bigtite  secbigtc">
         <h1 class="bigtite">Наши возможности</h1>
     </div>
@@ -257,54 +314,87 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+                    <div><span class="btnsledenxt">Смахните вправо-></span></div>
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
 
                 </div>
                 <div class="swiper-slide">
+                    <div><span class="btnsledeprw">
+                            &lt;Смахните влево</span>
+                    </div>
+
                     <div class="contentslide"><span class="titleslide">Telegram Bot</span>
                         <p class="textslide"><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.<br><br>Для современного мира укрепление и развитие внутренней структуры прекрасно подходит для реализации своевременного выполнения сверхзадачи. Безусловно, курс на.</p><a href="" class="btnslide">Нам это надо</a>
                     </div>
@@ -314,99 +404,8 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        if (window.screen.width <= 420) {
-            var swiper = new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
-            });
-        };
-    </script>
 
 
-
-    <div class="container z-depth-1 my-5 py-5 px-4 px-lg-0">
-
-        <!-- Section -->
-        <section>
-
-            <style>
-
-            </style>
-
-            <h3 class="font-weight-bold text-center dark-grey-text pb-2">Our History</h3>
-            <hr class="w-header my-4">
-            <p class="lead text-center text-muted pt-2 mb-5">MDB founded to help startups, and it still shapes the way we work today.</p>
-
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-
-                    <ol class="timeline">
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Launched our website</h5>
-                            <p class="grey-text font-small"><time datetime="2017-02-08">08 Feb 2017</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Got the first 100 users</h5>
-                            <p class="grey-text font-small"><time datetime="2017-08-17">17 Aug 2017</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Raised $1.4 million in seed funding</h5>
-                            <p class="grey-text font-small"><time datetime="2018-03-26">26 Mar 2019</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Team size increased to 20</h5>
-                            <p class="grey-text font-small"><time datetime="2018-04-14">14 Apr 2019</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Team size increased to 20</h5>
-                            <p class="grey-text font-small"><time datetime="2018-04-14">14 Apr 2019</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Team size increased to 20</h5>
-                            <p class="grey-text font-small"><time datetime="2018-04-14">14 Apr 2019</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-
-                        <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">Team size increased to 20</h5>
-                            <p class="grey-text font-small"><time datetime="2018-04-14">14 Apr 2019</time></p>
-                            <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique.
-                                Explicabo amet ipsum fugiat aliquam alias.</p>
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-
-        </section>
-        <!-- Section -->
-
-    </div>
 
 
 
@@ -417,7 +416,7 @@
         <svg viewBox="0 0 1600 612" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="text-curve" fill="none" d="M-96 293.623C38.3425 210.173 409.79 96.8444 820.837 311.141C1231.88 525.437 1575.55 388.752 1696 293.623"></path>
             <text y="40" letter-spacing="-0.02em" style="transform:translateY(2rem)" fill="#202124" class="walltxt">
-                <textPath href="#text-curve" id="raptx" startOffset="">
+                <textPath href="#text-curve" id="raptx">
                     <tspan fill="#4E44CE">BIMPLE</tspan> BIMPLE
                     <tspan fill="#4E44CE">BIMPLE</tspan> BIMPLE
                     <tspan fill="#4E44CE">BIMPLE</tspan>
@@ -431,13 +430,13 @@
 
 
 
-    <div class="container my-5">
+    <div class="smallcont container my-5">
 
 
         <!-- Section: Block Content -->
-        <section class="dark-grey-text text-center">
+        <section class=" dark-grey-text">
 
-            <h3 class="font-weight-bold mb-4 pb-2">Our best projects</h3>
+            <h1 class="bigtite">НАШИ ЛУЧШИЕ ПРОЕКТЫ</h1>
             <p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
 
             <!-- Grid row -->
@@ -455,7 +454,7 @@
 
                     <div class="px-3 pt-3 mx-1 mt-1 pb-0">
                         <a class="orange-text">
-                            <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-chart-line pr-2"></i>Marketing</h6>
+
                         </a>
                         <h4 class="font-weight-bold mb-3">Title of the news</h4>
                         <p class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit cupidatat proident voluptatem quia numquam.</p>
@@ -477,7 +476,7 @@
 
                     <div class="px-3 pt-3 mx-1 mt-1 pb-0">
                         <a class="blue-text">
-                            <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-eye pr-2"></i>Entertainment</h6>
+
                         </a>
                         <h4 class="font-weight-bold mb-3">Title of the news</h4>
                         <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
@@ -520,7 +519,7 @@
                 <br>
                 <input type="checkbox" value=""><span>Я согласен(а) на обработку персональных данных</span>
                 <br>
-                 <input type="submit" value="Отправить заявку">
+                <input type="submit" value="Отправить заявку">
             </form>
         </div>
 
@@ -528,75 +527,11 @@
 
 
 
-    <script>
-    
-   $(function() {
-	var $menu_popup = $('.menu-popup');
- 
-	$(".menu-triger").click(function(){
-		$('body').addClass('body_pointer');		
-		$menu_popup.show();
-		$menu_popup.animate(
-			{right: parseInt($menu_popup.css('left'),1) == 0 ? -$menu_popup.outerWidth() : 0}, 
-			300
-		);
-		return false;
-	});	
-	
-	$(".menu-close").click(function(){
-		$('body').removeClass('body_pointer');		
-		$menu_popup.animate(
-			{right: parseInt($menu_popup.css('right'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
-			300, 
-			function(){
-				$menu_popup.hide(0);
-			}
-		);
-		return false;
-	});	
-	
-	$(document).on('click', function(e){
-		if (!$(e.target).closest('.menu-popup').length){
-			$('body').removeClass('body_pointer');
-			$menu_popup.animate(
-				{right: parseInt($menu_popup.css('right'),10) == 0 ? -$menu_popup.outerWidth() : 0}, 
-				300, 
-				function(){
-					$menu_popup.hide(0);
-				}
-			);
-		}
-	});
-});
-        
-       
-    </script>
 
 
 
 
 
-    <script>
-        if (window.screen.width >= 420) {
-            let scrollObject = document.getElementById("raptx");
-            window.addEventListener("scroll", () => {
-                var a = window.pageYOffset - 5000;
-                scrollObject.setAttribute('startOffset', `${a - 1000}`);
-                var info = document.getElementById('testspan');
-                info.innerHTML = +info.innerHTML + window.pageYOffset;
-            });
-        };
-
-        if (window.screen.width <= 420) {
-            let scrollObject = document.getElementById("raptx");
-            window.addEventListener("scroll", () => {
-                var a = window.pageYOffset - 5000;
-                scrollObject.setAttribute('startOffset', `${a - 1000}`);
-                var info = document.getElementById('testspan');
-                info.innerHTML = +info.innerHTML + window.pageYOffset;
-            });
-        };
-    </script>
 
 
     <!-- функция колесика мыши -->
@@ -657,5 +592,1184 @@
   </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--
+<div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+-->
 
-</body></html>
+    <!--Скрипт карточек-->
+
+    <script>
+        if (window.screen.width <= 420) {
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+            });
+        };
+    </script>
+
+
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+
+    <!--  Скрипт для волны-->
+    <script>
+        if (window.screen.width >= 420) {
+            let scrollObject = document.getElementById("raptx");
+            window.addEventListener("scroll", () => {
+                var a = window.pageYOffset - (window.innerHeight * 10);
+                scrollObject.setAttribute('startOffset', `${a + (window.innerHeight*3)}`);
+                var info = document.getElementById('testspan');
+                info.innerHTML = +info.innerHTML + window.pageYOffset;
+            });
+        };
+
+        if (window.screen.width <= 420) {
+            let scrollObject = document.getElementById("raptx");
+            window.addEventListener("scroll", () => {
+                var a = window.pageYOffset - (window.pageYOffset/10);
+                scrollObject.setAttribute('startOffset', `${a - (window.innerHeight*6)}`);
+                var info = document.getElementById('testspan');
+                info.innerHTML = +info.innerHTML + window.pageYOffset;
+            });
+        };
+    </script>
+
+    <!--    Скрипт меню-->
+    <script>
+        $(function() {
+            var $menu_popup = $('.menu-popup');
+
+            $(".menu-triger").click(function() {
+                $('body').addClass('body_pointer');
+                $menu_popup.show();
+                $menu_popup.animate({
+                        right: parseInt($menu_popup.css('left'), 1) == 0 ? -$menu_popup.outerWidth() : 0
+                    },
+                    300
+                );
+                return false;
+            });
+
+            $(".menu-close").click(function() {
+                $('body').removeClass('body_pointer');
+                $menu_popup.animate({
+                        right: parseInt($menu_popup.css('right'), 10) == 0 ? -$menu_popup.outerWidth() : 0
+                    },
+                    300,
+                    function() {
+                        $menu_popup.hide(0);
+                    }
+                );
+                return false;
+            });
+
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.menu-popup').length) {
+                    $('body').removeClass('body_pointer');
+                    $menu_popup.animate({
+                            right: parseInt($menu_popup.css('right'), 10) == 0 ? -$menu_popup.outerWidth() : 0
+                        },
+                        300,
+                        function() {
+                            $menu_popup.hide(0);
+                        }
+                    );
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+         if (window.screen.width >= 420) {
+        $(document).ready(function() {
+            var element = $(".firstlargcont");
+            var height_el = element.offset().top;
+            var element_stop = $(".this");
+            var height_el_stop = element_stop.offset().top;
+            var elementtxt = $(".cascadtextcont");
+            $(".fixed_block_position").css({
+                "width": element.outerWidth(),
+                "height": element.outerHeight()
+            });
+
+            $(window).scroll(function() {
+
+                if (($(window).scrollTop() +8) > height_el_stop - element.outerHeight()) {
+
+                    element.css({}).removeClass("fixed").addClass("absolute");
+                    elementtxt.addClass("cascadtextcontfx");
+
+                } else {
+                    if ($(window).scrollTop() > height_el) {
+
+                        element.addClass("fixed").removeClass("absolute").attr("style", "");
+                        
+                    } else {
+
+
+
+                    }
+
+                }
+
+            });
+
+        });}
+         if (window.screen.width <= 420) {
+        $(document).ready(function() {
+
+            var element = $(".firstlargcont");
+            var height_el = element.offset().top;
+            var element_stop = $(".this");
+            var height_el_stop = element_stop.offset().top;
+            var elementtxt = $(".cascadtextcont");
+            $(".fixed_block_position").css({
+                "width": element.outerWidth(),
+                "height": element.outerHeight()
+            });
+
+            $(window).scroll(function() {
+
+                if (($(window).scrollTop() +50) > height_el_stop - element.outerHeight()) {
+
+                    element.css({}).removeClass("fixed").addClass("absolute");
+                    elementtxt.addClass("cascadtextcontfx");
+
+                } else {
+                    if ($(window).scrollTop() > height_el) {
+
+                        element.addClass("fixed").removeClass("absolute").attr("style", "");
+                        
+                    } else {
+
+
+
+                    }
+
+                }
+
+            });
+
+        });}
+    </script>
+
+    <!--    Скрипт главной анимации-->
+    <script>
+        if (window.screen.width >= 420) {
+            window.onload = function() {
+                lax.init()
+
+                // Добавить драйвер, который мы используем для управления нашими анимациями
+                lax.addDriver('scrollY', function() {
+                    return window.scrollY
+                })
+
+                // Добавить привязки анимации к элементам
+
+                lax.addElements('.bimpltitle', {
+                    scrollY: {
+                        translateX: [
+                            [1, 'elHeight*3.4', 'elHeight*11', 'elHeight*13'],
+                            {
+                                500: [1, 1, 1, 1],
+                                1400: [1, 'pageWidth/5', 'pageWidth/5', 1]
+                            }
+                        ],
+                        opacity: [
+                            [1, 'elHeight*3.4', 'elHeight*11', 'elHeight*13'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+                lax.addElements('.firstlargcont', {
+                    scrollY: {
+                        scale: [
+                            [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
+                            [1, 1.2, 1.2, 1]
+                        ]
+                    }
+
+                })
+
+
+
+                lax.addElements('.aboutbimpanimcont', {
+                    scrollY: {
+                        opacity: [
+                            [1, 'elHeight', 'elHeight*8', 'elHeight*10'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.wrM', {
+                    scrollY: {
+                        scale: [
+                            ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
+                            [1, 30, 30, 1]
+                        ],
+                        translateX: [
+                            [1, 'elWidth*5', 'elWidth*23', 'elWidth*29'],
+                            {
+                                500: [1, 25, 25, 1],
+                                1400: [1, 'elWidth*3.7', 'elWidth*3.7', 1]
+                            }
+                        ],
+
+                        translateY: [
+                            [500, 'elHeight*5', 'elHeight*8', 'elHeight*10'],
+                            {
+                                500: [0, 'elHeight*20', 'elHeight*20', 0],
+                                1400: [0, 'elHeight', 'elHeight', 0]
+                            }
+                        ],
+
+                        opacity: [
+                            ['elWidth*5', 'elWidth*6', 'elWidth*30', 'elWidth*35'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.spabbi', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*6', 'elWidth*6.5'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.navtarget', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth/2.5', 'elWidth*5', 'elWidth*5.5'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.logo', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth*5', 'elWidth*30', 'elWidth*35'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+
+
+                lax.addElements('.lng', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth*5', 'elWidth*30', 'elWidth*35'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.callbtncont', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*5', 'elWidth*5.5'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.cascadtext1', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/5', 'elWidth'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth/7', 'elWidth*1.5'],
+                            {
+                                1400: ['elHeight*9', '-elHeight*9'],
+                                500: ['elHeight*9', '-elHeight*9']
+                            }
+                        ]
+                    }
+                })
+                lax.addElements('.cascadtext2', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/2', 'elWidth*2'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth/2', 'elWidth*2'],
+                            {
+                                1400: ['-elHeight*4', 'elHeight*4'],
+                                500: ['-elHeight*4', 'elHeight*4']
+                            }
+                        ]
+
+                    }
+                })
+                lax.addElements('.cascadtext3', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/4', 'elWidth*2'],
+                            {
+                                1400: ['pageWidth', '-pageWidth'],
+                                500: ['pageWidth', '-pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth/4', 'elWidth*2'],
+                            {
+                                1400: ['elHeight*4', '-elHeight*4'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ]
+                    }
+                })
+
+
+
+                lax.addElements('.canf1', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*9']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*5']
+                            }
+                        ]
+
+
+                    }
+                })
+
+
+
+                lax.addElements('.canf2', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*10'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*10']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf3', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*20'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf4', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*9'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*25']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf5', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*13'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*15']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf6', {
+                    scrollY: {
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*23'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*13']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf7', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*18'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9']
+                            }
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.canf8', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*17', 'elWidth*19'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*9'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*7']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*15'],
+                            {
+                                1400: ['-elWidth', 'elHeight*22']
+                            }
+                        ]
+                    }
+                })
+
+
+
+
+
+                lax.addElements('.skrolltextcont', {
+                    scrollY: {
+
+
+                        translateY: [
+                            ['elWidth', 'elWidth*9', 'elWidth*20', 'elWidth*22'],
+                            {
+                                1400: [0, '-elHeight', '-elHeight', 0],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ],
+                        opacity: [
+                            [0, 'elWidth', 'elWidth*17', 'elWidth*19'],
+                            [1, 0, 0, 0]
+                        ]
+                    }
+                })
+
+
+
+            }
+        };
+    </script>
+
+    <script>
+        if (window.screen.width <= 420) {
+            window.onload = function() {
+                lax.init()
+
+                // Добавить драйвер, который мы используем для управления нашими анимациями
+                lax.addDriver('scrollY', function() {
+                    return window.scrollY
+                })
+
+                // Добавить привязки анимации к элементам
+
+                lax.addElements('.bimpltitle', {
+                    scrollY: {
+                        translateX: [
+                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            {
+                                500: [1, 1, 1, 1],
+                                1400: [1, 'pageWidth/5', 'pageWidth/5', 1]
+                            }
+                        ],
+                        opacity: [
+                            [1, 'elHeight*3.4', 'elHeight*20', 'elHeight*25'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+                lax.addElements('.firstlargcont', {
+                    scrollY: {
+                        scale: [
+                            [1, 'elHeight', 'elHeight*3.7', 'elHeight*4.5'],
+                            [1, 1.2, 1.2, 1]
+                        ]
+                    }
+
+                })
+
+
+
+                lax.addElements('.aboutbimpanimcont', {
+                    scrollY: {
+                        opacity: [
+                            [1, 'elHeight', 'elHeight*8', 'elHeight*10'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.wrM', {
+                    scrollY: {
+                        scale: [
+                            ['elWidth*5', 'elWidth*7', 'elWidth*10', 'elWidth*20'],
+                            [1, 30, 30, 1]
+                        ],
+                        translateX: [
+                            [1, 'elWidth*5', 'elWidth*43', 'elWidth*49'],
+                            {
+                                500: [1, 25, 25, 1],
+                                1400: [1, 'elWidth*3.16', 'elWidth*3.16', 1]
+                            }
+                        ],
+
+                        translateY: [
+                            ['elHeight', 'elHeight*4', 'elHeight*20', 'elHeight*22'],
+                            {
+                                500: [0, 'elHeight*4', 'elHeight*4', 0],
+                                1400: [0, 'elHeight', 'elHeight', 0]
+                            }
+                        ],
+
+                        opacity: [
+                            ['elWidth*5', 'elWidth*6', 'elWidth*42', 'elWidth*45'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+
+                })
+
+
+                lax.addElements('.spabbi', {
+                    scrollY: {
+                        translateY: [
+                            [0, 'elHeight*10', 'elHeight*36', 'elHeight*38'],
+                            {
+                                500: ['-pageHeight/14', 'elHeight*5', 'elHeight*5', 0]
+                            }
+                        ],
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*10', 'elWidth*12'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.navtarget', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth/2.5', 'elWidth*12', 'elWidth*14'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.logo', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth*10', 'elWidth*36', 'elWidth*39'],
+                            [1, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+
+                lax.addElements('.menu-triger', {
+                    scrollY: {
+
+                        opacity: [
+                            [0, 'elWidth*10', 'elWidth*86', 'elWidth*89'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+
+                lax.addElements('.callbtncont', {
+                    scrollY: {
+
+                        opacity: [
+                            [1, 'elWidth', 'elWidth*10', 'elWidth*12'],
+                            [0, 0, 0, 1]
+                        ]
+                    }
+                })
+
+                lax.addElements('.cascadtext1', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth/2', 'elWidth*6'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth*2', 'elWidth*7'],
+                            {
+                                1400: ['elHeight*9', '-elHeight*9'],
+                                500: ['elHeight*9', '-elHeight*9']
+                            }
+                        ]
+                    }
+                })
+                lax.addElements('.cascadtext2', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth', 'elWidth*5'],
+                            {
+                                1400: ['-pageWidth', 'pageWidth'],
+                                500: ['-pageWidth', 'pageWidth*1.2']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth', 'elWidth*5'],
+                            {
+                                1400: ['-elHeight*4', 'elHeight*4'],
+                                500: ['-elHeight*4', 'elHeight*4']
+                            }
+                        ]
+
+                    }
+                })
+                lax.addElements('.cascadtext3', {
+                    scrollY: {
+
+                        translateX: [
+                            ['elWidth', 'elWidth*5'],
+                            {
+                                1400: ['pageWidth', '-pageWidth'],
+                                500: ['pageWidth', '-pageWidth']
+                            }
+                        ],
+                        opacity: [
+                            ['elWidth/2', 'elWidth'],
+                            [0, 1]
+                        ],
+                        translateY: [
+                            ['elWidth*2', 'elWidth*6'],
+                            {
+                                1400: ['elHeight*4', '-elHeight*4'],
+                                500: ['elHeight*4', '-elHeight*4']
+                            }
+                        ]
+                    }
+                })
+
+
+
+                lax.addElements('.canf1', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*35']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*27']
+                            }
+                        ]
+
+
+                    }
+                })
+
+
+
+                lax.addElements('.canf2', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*45']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*35']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf3', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*30']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*40']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf4', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*55']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf5', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*26']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*28']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf6', {
+                    scrollY: {
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*43']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*43']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf7', {
+                    scrollY: {
+
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*52']
+                            }
+                        ]
+
+                    }
+                })
+
+
+                lax.addElements('.canf8', {
+                    scrollY: {
+
+
+
+                        opacity: [
+                            ['elWidth/4', 'elWidth/2', 'elWidth*63', 'elWidth*65'],
+                            [0, 1, 1, 0]
+                        ],
+                        translateY: [
+                            ['elWidth*6', 'elWidth*65'],
+                            {
+                                1400: ['-elWidth', 'elHeight*9'],
+                                500: ['-elWidth', 'elHeight*36']
+                            }
+                        ],
+
+                        rotateX: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*47']
+                            }
+                        ],
+                        rotateY: [
+                            ['elWidth', 'elWidth*65'],
+                            {
+                                500: ['-elWidth', 'elHeight*44']
+                            }
+                        ]
+
+                    }
+                })
+
+
+
+                lax.addElements('.skrolltextcont', {
+                    scrollY: {
+
+
+                        translateY: [
+                            ['elWidth', 'elWidth*9', 'elWidth*22', 'elWidth*24'],
+                            {
+                                500: [0, '-elHeight*1.3', '-elHeight*1.3', 0]
+                            }
+                        ],
+                         opacity: [
+                            [0, 'elWidth', 'elWidth*17', 'elWidth*19'],
+                            [1, 0, 0, 0]
+                        ]
+                    }
+                })
+
+
+
+            }
+        };
+    </script>
+
+
+
+
+</body>
+
+</html>

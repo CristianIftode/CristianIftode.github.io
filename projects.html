@@ -15,12 +15,38 @@
 
 <body>
 
+<div class="preloader">
+        <div class="preloader-1">
+            <svg>
+                <g>
+                    <path d="M 50,100 A 1,1 0 0 1 50,0" />
+                </g>
+                <g>
+                    <path d="M 50,75 A 1,1 0 0 0 50,-25" />
+                </g>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6610f2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6f42c1;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        $(window).on('load', function() {
+            $('.preloader').addClass("preloader-remove");
+        });
+    </script>
+
 
     <div id="fullpage">
-        <div class="section" data-anchor="block1">
+        <div class="section" style="" data-anchor="block1">
+           <img src="img/mockup1.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content">
-                    <a href="index.html"><div class="logo"><img alt="" src="img/logo.svg"></div></a>
+                    <a href="index.html"><div class="logo"><img alt="" src="img/logo.svg"><span>  <- Выход</span></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -30,27 +56,27 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol1.png" alt="">
             </div>
-            <img src="img/mockup1.png" alt="" class="mkupmob">
+            
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup1.png" alt="" class="mkup"></div>
-                <img src="img/imgbg1.png" alt="" class="imgbg">
             </div>
+            
         </div>
         <div class="section" data-anchor="block2">
-           <img src="img/mockup2.png" alt="" class="mkupmob">
+           
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup2.png" alt="" class="mkup"></div>
-                <img src="img/imgbg2.png" alt="" class="imgbg">
+               
             </div>
+            <img src="img/mockup2.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content" style="color: #fff;">
-                    <a href="index.html"><div class="logo"><img alt="" style="color: #fff" src="img/logo-w.svg"></div></a>
+                    <a href="index.html"><div class="logo"><span>Выход ->  </span><img alt="" style="color: #fff" src="img/logo-w.svg"></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -60,19 +86,20 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol2.png" alt="">
+              
 
             </div>
+           
         </div>
         <div class="section" data-anchor="block3">
-
+            <img src="img/mockup3.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content" style="color: #fff;">
-                    <a href="index.html"><div class="logo"><img alt="" src="img/logo-w.svg"></div></a>
+                    <a href="index.html"><div class="logo"><img alt="" src="img/logo-w.svg"><span>  <- Выход</span></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -82,30 +109,32 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol3.png" alt="">
+               
 
             </div>
-            <img src="img/mockup3.png" alt="" class="mkupmob">
+            
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup3.png" alt="" class="mkup"></div>
-                <img src="img/imgbg3.png" alt="" class="imgbg">
+            
             </div>
+          
         </div>
 
         <div class="section" data-anchor="block4">
 
-            <img src="img/mockup4.png" alt="" class="mkupmob">
+           
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup4.png" alt="" class="mkup"></div>
-                <img src="img/imgbg4.png" alt="" class="imgbg">
+             
             </div>
+            <img src="img/mockup4.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content" style="color: #fff;">
-                    <a href="index.html"><div class="logo"><img alt="" src="img/logo-w.svg"></div></a>
+                    <a href="index.html"><div class="logo"><span>Выход ->  </span><img alt="" src="img/logo-w.svg"></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -115,22 +144,22 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol4.png" alt="">
+              
 
             </div>
 
-
+         
         </div>
 
         <div class="section" data-anchor="block5">
-
+            <img src="img/mockup5.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content" style="color: #fff;">
-                    <a href="index.html"><div class="logo"><img alt="" src="img/logo-w.svg"></div></a>
+                    <a href="index.html"><div class="logo"><img alt="" src="img/logo-w.svg"><span>  <- Выход</span></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -140,31 +169,32 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol5.png" alt="">
+            
 
             </div>
-            <img src="img/mockup5.png" alt="" class="mkupmob">
+            
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup5.png" alt="" class="mkup"></div>
-                <img src="img/imgbg5.png" alt="" class="imgbg">
+              
             </div>
-
+            
         </div>
 
         <div class="section" data-anchor="block6">
 
-            <img src="img/mockup6.png" alt="" class="mkupmob">
+           
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup6.png" alt="" class="mkup"></div>
-                <img src="img/imgbg6.png" alt="" class="imgbg">
+               
             </div>
+            <img src="img/mockup6.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content" style="color: #fff;">
-                    <a href="index.html"><div class="logo"><img alt="" src="img/logo-w.svg"></div></a>
+                    <a href="index.html"><div class="logo"><span>Выход ->  </span><img alt="" src="img/logo-w.svg"></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -174,22 +204,22 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol6.png" alt="">
+                
 
             </div>
 
-
+        
         </div>
 
         <div class="section" data-anchor="block7">
-
+            <img src="img/mockup7.png" alt="" class="mkupmb">
             <div class="colorbackg">
                 <div class="content">
-                    <a href="index.html"><div class="logo"><img alt="" src="img/logo.svg"></div></a>
+                    <a href="index.html"><div class="logo"><img alt="" src="img/logo.svg"><span>  <- Выход</span></div></a>
                     <div class="fulltitle">
                         <h2>Империя растений</h2>
                     </div>
@@ -199,19 +229,19 @@
                     <div class="fullcontlist">
                         <h3>Постановка задачи</h3><span>Хочу пиздатый сайт за 40 гривен о пестиках и тычинках. Когда заходишь - ахуеваешь от пиздатости и лаконичности дизайна и продуманности разработки веб страницы.</span>
                     </div>
-                    <div class="aboutbimplcall">
+                    <div class="callbtnflpg">
                     <div class="callbtncont"><a class="callbtn" href="">Отправить заявку</a></div>
                     </div>
                 </div>
-                <img class="colo" src="img/bgcol7.png" alt="">
+             
 
             </div>
-            <img src="img/mockup7.png" alt="" class="mkupmob">
+            
             <div class="mocupbackgr">
                 <div class="mockup"><img src="img/mockup7.png" alt="" class="mkup"></div>
-                <img src="img/imgbg7.png" alt="" class="imgbg">
+                
             </div>
-
+         
         </div>
     </div>
 
@@ -231,11 +261,16 @@
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['block1', 'block2', 'block3', 'block4', 'block5', 'block6', 'block7'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000
-            });
+		//options here
+        css3: true
+       
+       
+	});
+        
+           
         });
+        
+    
     </script>
+    
 </body></html>
