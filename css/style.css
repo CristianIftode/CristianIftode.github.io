@@ -2458,7 +2458,8 @@ body {
     #fullpage .section {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        
+        width: 100vw;
     }
 
     #fullpage .section .colorbackg {
@@ -2517,7 +2518,7 @@ body {
     #fullpage .section:nth-of-type(2n) {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        width: 100vw;
     }
 
     #fullpage .section:nth-of-type(2n) .colorbackg {
