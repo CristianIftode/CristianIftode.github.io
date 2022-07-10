@@ -264,9 +264,10 @@
 		//options here
         css3: true,
         
-        afterLoad: function() {
-            $('.section').style('height', window.innerHeight + 'px');
-        },
+        afterLoad: setTimeout(function() {
+            $('.section').style('height', document.documentElement.clientHeight + 'px');
+            $(window).scrollTop(0);
+        }, 10),
        
 	});
         
